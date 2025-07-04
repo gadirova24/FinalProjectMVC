@@ -12,7 +12,7 @@ namespace Service.Services.Interfaces
         Task<IEnumerable<AdminCountryVM>> GetAllAdminAsync();
         Task CreateAsync(CountryCreateVM country);
         Task DeleteAsync(int id);
-        Task<bool> IsDuplicateAsync(string name, string imageFileName);
+        Task<bool> IsDuplicateAsync(string name);
         Task UpdateAsync(int id, CountryEditVM country);
         Task<IEnumerable<CountryVM>> GetCountriesWithCartoonsAsync();
         Task<CountryDetailVM> GetCountryDetailAsync(int id);

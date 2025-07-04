@@ -155,7 +155,7 @@ namespace Service.Services
                 datas.Add(new UserVM
                 {
                     Id = user.Id,
-                    FullName = user.UserName,
+                    FullName = user.FullName,
                     Email = user.Email,
                     UserName = user.UserName,
                     Roles = roles.ToArray()

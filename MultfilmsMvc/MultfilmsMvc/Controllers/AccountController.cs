@@ -95,7 +95,30 @@ namespace MultfilmsMvc.Controllers
             return View();
         }
 
-     
+        [HttpGet]
+        public async Task<IActionResult> Profile()
+        {
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null) return NotFound();
+            var roles = await _userManager.GetRolesAsync(user);
+            string status;
+            if (roles.Contains("SuperAdmin"))
+                status = "SuperAdmin";
+            else if (roles.Contains("Admin"))
+                status = "Admin";
+            else
+                status = "Member";
+
+            var model = new ProfileVM
+            {
+                UserName = user.UserName,
+                FullName = user.FullName, 
+                Email = user.Email,
+                Status = status
+            };
+
+            return View(model);
+        }
 
         [HttpGet]
         public async Task<IActionResult> ConfirmEmail(string userId, string token)

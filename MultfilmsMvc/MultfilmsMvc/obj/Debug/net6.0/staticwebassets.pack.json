@@ -1809,12 +1809,12 @@
       "PackagePath": "staticwebassets/assets/css/style.scss"
     },
     {
-      "Id": "/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/wwwroot/assets/images/cartoons/01832e7f-7447-40b0-a5c8-97c02828d440 rusalochka1.webp",
-      "PackagePath": "staticwebassets/assets/images/cartoons/01832e7f-7447-40b0-a5c8-97c02828d440 rusalochka1.webp"
+      "Id": "/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/wwwroot/assets/images/cartoons/01179dc4-3f5c-4bf9-9249-51f2791d8e4e bambi.webp",
+      "PackagePath": "staticwebassets/assets/images/cartoons/01179dc4-3f5c-4bf9-9249-51f2791d8e4e bambi.webp"
     },
     {
-      "Id": "/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/wwwroot/assets/images/cartoons/0280f644-1c7b-4267-8c14-83f411dd83df.webp",
-      "PackagePath": "staticwebassets/assets/images/cartoons/0280f644-1c7b-4267-8c14-83f411dd83df.webp"
+      "Id": "/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/wwwroot/assets/images/cartoons/01832e7f-7447-40b0-a5c8-97c02828d440 rusalochka1.webp",
+      "PackagePath": "staticwebassets/assets/images/cartoons/01832e7f-7447-40b0-a5c8-97c02828d440 rusalochka1.webp"
     },
     {
       "Id": "/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/wwwroot/assets/images/cartoons/06fe80d8-7095-4b8c-a8f9-36ae1745b0ea lednikoviyskrat.webp",
@@ -1829,6 +1829,10 @@
       "PackagePath": "staticwebassets/assets/images/cartoons/16340b6a-5aec-4a3f-a025-9addeacf9d25 frozen1.webp"
     },
     {
+      "Id": "/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/wwwroot/assets/images/cartoons/1f14c407-7076-4734-a70f-a283b11cf490.webp",
+      "PackagePath": "staticwebassets/assets/images/cartoons/1f14c407-7076-4734-a70f-a283b11cf490.webp"
+    },
+    {
       "Id": "/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/wwwroot/assets/images/cartoons/269bfc31-db8c-4bbf-b4f2-39e020f93a27 lednikoviy4.webp",
       "PackagePath": "staticwebassets/assets/images/cartoons/269bfc31-db8c-4bbf-b4f2-39e020f93a27 lednikoviy4.webp"
     },
@@ -1839,6 +1843,10 @@
     {
       "Id": "/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/wwwroot/assets/images/cartoons/2fd8b336-8f1c-4fe2-bf1c-d75e4f8bc445 grinch.webp",
       "PackagePath": "staticwebassets/assets/images/cartoons/2fd8b336-8f1c-4fe2-bf1c-d75e4f8bc445 grinch.webp"
+    },
+    {
+      "Id": "/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/wwwroot/assets/images/cartoons/32195a86-6629-4317-b197-755a4ded3f21 angel.webp",
+      "PackagePath": "staticwebassets/assets/images/cartoons/32195a86-6629-4317-b197-755a4ded3f21 angel.webp"
     },
     {
       "Id": "/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/wwwroot/assets/images/cartoons/3a12572b-4acd-45d6-9344-ef873cdceb8a cheburashka.webp",
@@ -1857,16 +1865,16 @@
       "PackagePath": "staticwebassets/assets/images/cartoons/4540bb08-2e5b-4fbf-b07a-f5d0853a64ed lesnoypatrul.webp"
     },
     {
-      "Id": "/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/wwwroot/assets/images/cartoons/50d50108-9bef-4fba-99b1-84a65c2d5b57.webp",
-      "PackagePath": "staticwebassets/assets/images/cartoons/50d50108-9bef-4fba-99b1-84a65c2d5b57.webp"
+      "Id": "/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/wwwroot/assets/images/cartoons/53a38fc6-4d9a-4987-afbb-d5071141ba63 dinozavr.webp",
+      "PackagePath": "staticwebassets/assets/images/cartoons/53a38fc6-4d9a-4987-afbb-d5071141ba63 dinozavr.webp"
     },
     {
       "Id": "/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/wwwroot/assets/images/cartoons/5b169745-62d7-437f-8bce-2585fc146de8 enkanto.webp",
       "PackagePath": "staticwebassets/assets/images/cartoons/5b169745-62d7-437f-8bce-2585fc146de8 enkanto.webp"
     },
     {
-      "Id": "/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/wwwroot/assets/images/cartoons/6364faad-0130-44fe-bf07-ab032e737af7.webp",
-      "PackagePath": "staticwebassets/assets/images/cartoons/6364faad-0130-44fe-bf07-ab032e737af7.webp"
+      "Id": "/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/wwwroot/assets/images/cartoons/5ef758e2-6ef4-43d5-ab80-b18d60dd56db.webp",
+      "PackagePath": "staticwebassets/assets/images/cartoons/5ef758e2-6ef4-43d5-ab80-b18d60dd56db.webp"
     },
     {
       "Id": "/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/wwwroot/assets/images/cartoons/65cee315-ff1d-4670-a628-3626b2f21630 zverinyreysmult.webp",
@@ -1885,6 +1893,10 @@
       "PackagePath": "staticwebassets/assets/images/cartoons/7615cd74-37fd-46ea-9e74-d735ed374db3 ratatuy.webp"
     },
     {
+      "Id": "/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/wwwroot/assets/images/cartoons/7941713c-d975-48be-9524-71eb184936b8.webp",
+      "PackagePath": "staticwebassets/assets/images/cartoons/7941713c-d975-48be-9524-71eb184936b8.webp"
+    },
+    {
       "Id": "/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/wwwroot/assets/images/cartoons/7b77d9e9-ff4b-4bc1-b11a-cd77478dbcaa.webp",
       "PackagePath": "staticwebassets/assets/images/cartoons/7b77d9e9-ff4b-4bc1-b11a-cd77478dbcaa.webp"
     },
@@ -1895,6 +1907,10 @@
     {
       "Id": "/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/wwwroot/assets/images/cartoons/7ec7b1e5-d496-4407-a735-59bfa1bd366b tacki2.webp",
       "PackagePath": "staticwebassets/assets/images/cartoons/7ec7b1e5-d496-4407-a735-59bfa1bd366b tacki2.webp"
+    },
+    {
+      "Id": "/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/wwwroot/assets/images/cartoons/804d8218-b833-4095-a2e0-820be6cc3286 barbi.webp",
+      "PackagePath": "staticwebassets/assets/images/cartoons/804d8218-b833-4095-a2e0-820be6cc3286 barbi.webp"
     },
     {
       "Id": "/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/wwwroot/assets/images/cartoons/827a386a-9405-4b2e-833f-8dcb074fa6d9 lionking.webp",
@@ -1913,12 +1929,24 @@
       "PackagePath": "staticwebassets/assets/images/cartoons/92f6594d-ef1f-42e6-a51c-ee7d039fdf5d.webp"
     },
     {
+      "Id": "/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/wwwroot/assets/images/cartoons/9309e447-cce5-4763-bf28-412d68a0a153 ernest.webp",
+      "PackagePath": "staticwebassets/assets/images/cartoons/9309e447-cce5-4763-bf28-412d68a0a153 ernest.webp"
+    },
+    {
+      "Id": "/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/wwwroot/assets/images/cartoons/992104f6-f422-4dea-840c-ec9e4b3bd419 pingvini.webp",
+      "PackagePath": "staticwebassets/assets/images/cartoons/992104f6-f422-4dea-840c-ec9e4b3bd419 pingvini.webp"
+    },
+    {
       "Id": "/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/wwwroot/assets/images/cartoons/99a2259c-8f88-4597-881e-be1977937296.webp",
       "PackagePath": "staticwebassets/assets/images/cartoons/99a2259c-8f88-4597-881e-be1977937296.webp"
     },
     {
       "Id": "/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/wwwroot/assets/images/cartoons/aa63237b-3532-47ce-9cce-1300e8e3db54 monstri.webp",
       "PackagePath": "staticwebassets/assets/images/cartoons/aa63237b-3532-47ce-9cce-1300e8e3db54 monstri.webp"
+    },
+    {
+      "Id": "/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/wwwroot/assets/images/cartoons/aab9d541-a759-4d88-8eb0-bd5209d6d65f zveropolis.webp",
+      "PackagePath": "staticwebassets/assets/images/cartoons/aab9d541-a759-4d88-8eb0-bd5209d6d65f zveropolis.webp"
     },
     {
       "Id": "/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/wwwroot/assets/images/cartoons/addams.webp",
@@ -1931,10 +1959,6 @@
     {
       "Id": "/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/wwwroot/assets/images/cartoons/c654ea95-c8b6-4297-98f2-94a045505784 enkanto.webp",
       "PackagePath": "staticwebassets/assets/images/cartoons/c654ea95-c8b6-4297-98f2-94a045505784 enkanto.webp"
-    },
-    {
-      "Id": "/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/wwwroot/assets/images/cartoons/cbd89287-c267-4265-b725-a854087ddb10 10jizney.webp",
-      "PackagePath": "staticwebassets/assets/images/cartoons/cbd89287-c267-4265-b725-a854087ddb10 10jizney.webp"
     },
     {
       "Id": "/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/wwwroot/assets/images/cartoons/d1553c7f-f71f-4108-8caf-479ef81dd65b.webp",
@@ -1959,6 +1983,14 @@
     {
       "Id": "/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/wwwroot/assets/images/cartoons/ea4eb5df-d514-48e4-a140-a4082eb4393f megamind.webp",
       "PackagePath": "staticwebassets/assets/images/cartoons/ea4eb5df-d514-48e4-a140-a4082eb4393f megamind.webp"
+    },
+    {
+      "Id": "/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/wwwroot/assets/images/cartoons/f48668ed-d0ec-419c-9778-02288302f1d2.webp",
+      "PackagePath": "staticwebassets/assets/images/cartoons/f48668ed-d0ec-419c-9778-02288302f1d2.webp"
+    },
+    {
+      "Id": "/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/wwwroot/assets/images/cartoons/f7d4f858-f80f-4f40-aa94-14972e55e635 10jizney.webp",
+      "PackagePath": "staticwebassets/assets/images/cartoons/f7d4f858-f80f-4f40-aa94-14972e55e635 10jizney.webp"
     },
     {
       "Id": "/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/wwwroot/assets/images/cartoons/frozen1.webp",
@@ -2023,6 +2055,10 @@
     {
       "Id": "/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/wwwroot/assets/images/collections/278d3b03-0914-44c4-99a2-e904b45205c3 pro-zhivotnyh.jpeg",
       "PackagePath": "staticwebassets/assets/images/collections/278d3b03-0914-44c4-99a2-e904b45205c3 pro-zhivotnyh.jpeg"
+    },
+    {
+      "Id": "/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/wwwroot/assets/images/collections/f0a25e89-7b7c-44a8-92ee-4958cb9e7165 pro-angelov .jpeg",
+      "PackagePath": "staticwebassets/assets/images/collections/f0a25e89-7b7c-44a8-92ee-4958cb9e7165 pro-angelov .jpeg"
     },
     {
       "Id": "/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/wwwroot/assets/images/collections/pro-drakonov.jpeg",
@@ -2091,6 +2127,10 @@
     {
       "Id": "/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/wwwroot/assets/images/countries/869508d7-b07f-48d9-b9e3-40d0bfa1cdb2 Koreya.png",
       "PackagePath": "staticwebassets/assets/images/countries/869508d7-b07f-48d9-b9e3-40d0bfa1cdb2 Koreya.png"
+    },
+    {
+      "Id": "/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/wwwroot/assets/images/countries/8a9c4c4d-bbb0-49a3-8faa-c130573875fa-Indiya.png",
+      "PackagePath": "staticwebassets/assets/images/countries/8a9c4c4d-bbb0-49a3-8faa-c130573875fa-Indiya.png"
     },
     {
       "Id": "/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/wwwroot/assets/images/countries/9f83fca7-312c-4f44-86c7-99a164882727 Velikobritaniya.png",
@@ -2171,10 +2211,6 @@
     {
       "Id": "/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/wwwroot/assets/images/countries/ddc30686-58b3-4dbc-8ad4-9fc5958e8de2 Kitaj.png",
       "PackagePath": "staticwebassets/assets/images/countries/ddc30686-58b3-4dbc-8ad4-9fc5958e8de2 Kitaj.png"
-    },
-    {
-      "Id": "/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/wwwroot/assets/images/countries/f5fede33-080f-4351-a779-2a421a6359d1 Indiya.png",
-      "PackagePath": "staticwebassets/assets/images/countries/f5fede33-080f-4351-a779-2a421a6359d1 Indiya.png"
     },
     {
       "Id": "/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/wwwroot/assets/images/studios/002d2fcb-0ca0-4665-8ea8-ada26a8bfa49 disney.webp",

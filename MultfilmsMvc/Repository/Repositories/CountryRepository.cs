@@ -20,10 +20,10 @@ namespace Repository.Repositories
                 .Where(s => s.CountryCartoons.Any())
                 .ToListAsync();
         }
-        public async Task<bool> ExistsByNameAndImageAsync(string name, string imageFileName)
+        public async Task<bool> ExistsByNameAndImageAsync(string name )
         {
             return await _context.Countries
-                .AnyAsync(c => c.Name == name && c.Image == imageFileName);
+                .AnyAsync(c => c.Name == name );
         }
     }
 }

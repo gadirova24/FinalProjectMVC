@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using System.ComponentModel.DataAnnotations;
 using FluentValidation;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace Service.ViewModels.Admin.CartoonSlider
 {
@@ -11,20 +12,8 @@ namespace Service.ViewModels.Admin.CartoonSlider
         public int CartoonId { get; set; }
         public IFormFile BackgroundImageFile { get; set; }
         public string ExistingImage { get; set; }
+        public List<SelectListItem>? CartoonOptions { get; set; }
     }
-    public class CartoonSliderEditVMValidator : AbstractValidator<CartoonSliderEditVM>
-    {
-        public CartoonSliderEditVMValidator()
-        {
-            RuleFor(x => x.CartoonId)
-          .NotEmpty()
-          .WithMessage("Cartoon Id is required.");
-
-            RuleFor(x => x.BackgroundImageFile)
-                .NotEmpty()
-                .When(x => string.IsNullOrWhiteSpace(x.ExistingImage))
-                .WithMessage("Background image is required if no existing image is present.");
-        }
-    }
+  
 }
 

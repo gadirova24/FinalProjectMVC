@@ -31,7 +31,7 @@
                     @foreach (var cartoon in Model.Cartoons)
                     {
                         <div class="col-lg-2 col-6 col-md-3">
-                           
+
                             <div class="cartoon-item">
                                 <div class="cartoon-image">
                                     <a asp-controller="Cartoon" asp-action="Detail" asp-route-id="@cartoon.Id">
@@ -75,7 +75,7 @@
                     @for (int i = 1; i <= Model.TotalPages; i++)
                     {
                         <li class="page-item @(Model.CurrentPage == i ? "active" : "")">
-                            <a class="page-link" asp-action="Index"
+                            <a class="page-link"style="color: #eee; background-color: transparent;"  asp-action="Index"
                                asp-controller="Studio"
                                asp-route-id="@ViewBag.StudioId"
                                asp-route-page="@i"
@@ -87,9 +87,20 @@
                     }
                 </ul>
             </nav>
+     
+
         }
 
 
 
     </div>
 </section>
+<style>
+    .sort-items {
+        display: none;
+    }
+
+    .sort:hover .sort-items {
+        display: block;
+    }
+</style>

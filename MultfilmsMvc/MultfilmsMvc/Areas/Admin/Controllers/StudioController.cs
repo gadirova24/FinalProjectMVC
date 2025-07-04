@@ -52,18 +52,20 @@ namespace MultfilmsMvc.Areas.Admin.Controllers
         {
             if (!ModelState.IsValid) return View(request);
 
-            var isDuplicate = await _studioService.IsDuplicateAsync(request.Name, request.Image.FileName);
-            if (isDuplicate)
+            var allStudios = await _studioService.GetAllAdminAsync();
+            var duplicate = allStudios.Any(s =>
+                s.Name.Trim().ToLower() == request.Name.Trim().ToLower());
+
+            if (duplicate)
             {
-                ModelState.AddModelError("", "Studio with this name exist.");
+                ModelState.AddModelError(nameof(request.Name), "A studio with this name already exists.");
                 return View(request);
             }
 
             await _studioService.CreateAsync(request);
-
             return RedirectToAction(nameof(Index));
-
         }
+
         [HttpPost]
         public async Task<IActionResult> Delete(int id)
         {
@@ -88,19 +90,34 @@ namespace MultfilmsMvc.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, StudioEditVM request)
         {
+            var allStudios = await _studioService.GetAllAdminAsync();
+            var duplicate = allStudios.Any(s =>
+                s.Id != id &&
+                s.Name.Trim().ToLower() == request.Name.Trim().ToLower());
+
+            if (duplicate)
+            {
+                ModelState.AddModelError(nameof(request.Name), "A studio with this name already exists.");
+                var existing = await _studioService.GetByIdAsync(id);
+                request.ExistImage = existing.Image;
+                return View(request);
+            }
+
             try
             {
                 await _studioService.UpdateAsync(id, request);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 ModelState.AddModelError("", "Failed to update studio.");
                 var studio = await _studioService.GetByIdAsync(id);
                 request.ExistImage = studio.Image;
                 return View(request);
             }
+
             return RedirectToAction(nameof(Index));
         }
+
     }
 }
 

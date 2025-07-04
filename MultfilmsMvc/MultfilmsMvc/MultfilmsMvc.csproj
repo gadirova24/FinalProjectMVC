@@ -37,6 +37,7 @@
     <None Remove="Middlewares\" />
     <None Remove="Areas\Admin\Views\Account\" />
     <None Remove="Areas\Admin\Views\CartoonSlider\" />
+    <None Remove="Areas\Admin\Views\Comment\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
@@ -71,6 +72,7 @@
     <Folder Include="Middlewares\" />
     <Folder Include="Areas\Admin\Views\Account\" />
     <Folder Include="Areas\Admin\Views\CartoonSlider\" />
+    <Folder Include="Areas\Admin\Views\Comment\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Service\Service.csproj">

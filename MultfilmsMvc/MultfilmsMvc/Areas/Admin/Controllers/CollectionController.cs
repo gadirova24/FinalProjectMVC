@@ -39,18 +39,21 @@ namespace MultfilmsMvc.Areas.Admin.Controllers
         public async Task<IActionResult> Create(CollectionCreateVM request)
         {
             if (!ModelState.IsValid) return View(request);
-            var isDuplicate = await _collectionService.IsDuplicateAsync(request.Name, request.Image.FileName);
-            if (isDuplicate)
+
+            var allCollections = await _collectionService.GetAllAdminAsync();
+            var duplicate = allCollections.Any(c =>
+                c.Name.Trim().ToLower() == request.Name.Trim().ToLower());
+
+            if (duplicate)
             {
-                ModelState.AddModelError("", "Collection with this name exist.");
+                ModelState.AddModelError(nameof(request.Name), "A collection with this name already exists.");
                 return View(request);
             }
 
             await _collectionService.CreateAsync(request);
-
             return RedirectToAction(nameof(Index));
-
         }
+
         [HttpGet]
         public async Task<IActionResult> Detail(int? id)
         {
@@ -86,19 +89,33 @@ namespace MultfilmsMvc.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, CollectionEditVM request)
         {
+            var allCollections = await _collectionService.GetAllAdminAsync();
+            var duplicate = allCollections.Any(c =>
+                c.Id != id && c.Name.Trim().ToLower() == request.Name.Trim().ToLower());
+
+            if (duplicate)
+            {
+                ModelState.AddModelError(nameof(request.Name), "A collection with this name already exists.");
+                var collection = await _collectionService.GetByIdAsync(id);
+                request.ExistImage = collection.Image;
+                return View(request);
+            }
+
             try
             {
                 await _collectionService.UpdateAsync(id, request);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 ModelState.AddModelError("", "Failed to update collection.");
                 var collection = await _collectionService.GetByIdAsync(id);
                 request.ExistImage = collection.Image;
                 return View(request);
             }
+
             return RedirectToAction(nameof(Index));
         }
+
     }
 
 

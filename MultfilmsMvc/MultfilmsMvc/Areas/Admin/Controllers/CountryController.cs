@@ -60,11 +60,12 @@ namespace MultfilmsMvc.Areas.Admin.Controllers
         public async Task< IActionResult> Create(CountryCreateVM request)
         {
             if (!ModelState.IsValid) return View(request);
-            var isDuplicate = await _countryService.IsDuplicateAsync(request.Name, request.Image.FileName);
+            var isDuplicate = await _countryService.IsDuplicateAsync(request.Name);
             if (isDuplicate)
             {
                 _logger.LogWarning("Duplicate country detected: {Name}", request.Name);
-                ModelState.AddModelError("", "Country with this name exist.");
+                ModelState.AddModelError(nameof(request.Name), "Country with this name already exists.");
+
                 return View(request);
             }
 
@@ -94,10 +95,24 @@ namespace MultfilmsMvc.Areas.Admin.Controllers
             });
         }
 
+    
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, CountryEditVM request)
         {
+            var allCountries = await _countryService.GetAllAdminAsync();
+            var duplicate = allCountries.Any(c =>
+                c.Id != id &&
+                c.Name.Trim().ToLower() == request.Name.Trim().ToLower());
+
+            if (duplicate)
+            {
+                ModelState.AddModelError(nameof(request.Name), "A country with this name already exists.");
+                var existing = await _countryService.GetByIdAsync(id);
+                request.ExistImage = existing.Image;
+                return View(request);
+            }
+
             try
             {
                 await _countryService.UpdateAsync(id, request);
@@ -106,10 +121,11 @@ namespace MultfilmsMvc.Areas.Admin.Controllers
             {
                 _logger.LogError(ex, "Update failed");
                 ModelState.AddModelError("", "Failed to update country.");
-                var country = await _countryService.GetByIdAsync(id);
-                request.ExistImage = country.Image;
+                var existing = await _countryService.GetByIdAsync(id);
+                request.ExistImage = existing.Image;
                 return View(request);
             }
+
             return RedirectToAction(nameof(Index));
         }
 

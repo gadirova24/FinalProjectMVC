@@ -556,6 +556,21 @@ body .sidebar .sidebar-menu .menu a {
 body .sidebar .sidebar-menu .menu a span {
   margin-left: 10%;
 }
+    body #comment-area {
+        width: 100%;
+    }
+
+        body #comment-area .container .comment-add {
+            height: 200px;
+            background-color: #2e2b36;
+            border: 1px solid rgb(28, 25, 33);
+            margin-bottom: 30px;
+        }
+
+        body #comment-area .container .btn-add-cm {
+            border: none;
+            background-color: #16a085;
+        }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     body #cartoon-video .container {
         width: 100% !important;

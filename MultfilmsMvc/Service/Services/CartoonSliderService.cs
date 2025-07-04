@@ -67,8 +67,7 @@ namespace Service.Services
 
         public async Task CreateAsync(CartoonSliderCreateVM model)
         {
-            if (model.BackgroundImageFile == null)
-                throw new ValidationException("Background image is required");
+         
 
             if (!model.BackgroundImageFile.CheckFileType("image/"))
                 throw new ValidationException("Image type must be only image");

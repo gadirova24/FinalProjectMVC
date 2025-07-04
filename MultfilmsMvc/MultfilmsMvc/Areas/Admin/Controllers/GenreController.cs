@@ -48,11 +48,21 @@ namespace MultfilmsMvc.Areas.Admin.Controllers
         public async Task<IActionResult> Create(GenreCreateVM request)
         {
             if (!ModelState.IsValid) return View(request);
+
+            var allGenres = await _genreService.GetAllAdminAsync();
+            var isDuplicate = allGenres.Any(g =>
+                g.Name.Trim().ToLower() == request.Name.Trim().ToLower());
+
+            if (isDuplicate)
+            {
+                ModelState.AddModelError(nameof(request.Name), "A genre with this name already exists.");
+                return View(request);
+            }
+
             await _genreService.CreateAsync(request);
-
             return RedirectToAction(nameof(Index));
-
         }
+
         [HttpPost]
         public async Task<IActionResult> Delete(int id)
         {
@@ -75,9 +85,21 @@ namespace MultfilmsMvc.Areas.Admin.Controllers
         public async Task<IActionResult> Edit(int id, GenreEditVM request)
         {
             if (!ModelState.IsValid) return View(request);
+
+            var allGenres = await _genreService.GetAllAdminAsync();
+            var isDuplicate = allGenres.Any(g =>
+                g.Id != id && g.Name.Trim().ToLower() == request.Name.Trim().ToLower());
+
+            if (isDuplicate)
+            {
+                ModelState.AddModelError(nameof(request.Name), "A genre with this name already exists.");
+                return View(request);
+            }
+
             await _genreService.UpdateAsync(id, request);
             return RedirectToAction(nameof(Index));
         }
+
 
     }
 }

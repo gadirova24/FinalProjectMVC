@@ -6,6 +6,7 @@ using Service.ViewModels.Admin.Cartoon;
 using Service.ViewModels.Admin.CartoonSlider;
 using Service.ViewModels.Admin.Category;
 using Service.ViewModels.Admin.Collection;
+using Service.ViewModels.Admin.Comment;
 using Service.ViewModels.Admin.Country;
 using Service.ViewModels.Admin.Genre;
 using Service.ViewModels.Admin.Person;
@@ -121,6 +122,15 @@ namespace Service.Helpers.Mappings
             CreateMap<CartoonSliderCreateVM, CartoonSlider>();
             CreateMap<CartoonSlider, CartoonSliderEditVM>()
             .ForMember(dest => dest.ExistingImage, opt => opt.MapFrom(src => src.BackgroundImage));
+
+
+
+            CreateMap<Comment, CommentVM>()
+           .ForMember(dest => dest.UserName, opt => opt.MapFrom(src => src.User.UserName));
+
+            CreateMap<Comment, AdminCommentVM>()
+    .ForMember(vm => vm.UserName, opt => opt.MapFrom(c => c.User.UserName))
+    .ForMember(vm => vm.CartoonName, opt => opt.MapFrom(c => c.Cartoon.Name));
         }
     }
 }

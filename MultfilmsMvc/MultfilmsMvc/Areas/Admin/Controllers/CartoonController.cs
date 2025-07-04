@@ -100,17 +100,22 @@ namespace MultfilmsMvc.Areas.Admin.Controllers
                 await PopulateSelectListsAsync(request);
                 return View(request);
             }
-            var isDuplicate = await _cartoonService.IsDuplicateAsync(request.Name, request.Image.FileName);
+
+            var allCartoons = await _cartoonService.GetAllAdminAsync();
+            var isDuplicate = allCartoons.Any(c =>
+                c.Name.Trim().ToLower() == request.Name.Trim().ToLower());
+
             if (isDuplicate)
             {
-                ModelState.AddModelError("", "Cartoon with this name and image exist.");
-                await PopulateSelectListsAsync(request); 
+                ModelState.AddModelError(nameof(request.Name), "A cartoon with this name already exists.");
+                await PopulateSelectListsAsync(request);
                 return View(request);
             }
 
-            await _cartoonService.CreateAsync(request); 
+            await _cartoonService.CreateAsync(request);
             return RedirectToAction(nameof(Index));
         }
+
 
         [HttpGet]
         public async Task<IActionResult> Edit(int? id)
@@ -142,11 +147,16 @@ namespace MultfilmsMvc.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, CartoonEditVM request)
         {
-            //if (!ModelState.IsValid)
-            //{
-            //    await PopulateSelectListsAsync(request);
-            //    return View(request);
-            //}
+            var allCartoons = await _cartoonService.GetAllAdminAsync();
+            var isDuplicate = allCartoons.Any(c =>
+                c.Id != id && c.Name.Trim().ToLower() == request.Name.Trim().ToLower());
+
+            if (isDuplicate)
+            {
+                ModelState.AddModelError(nameof(request.Name), "A cartoon with this name already exists.");
+                await PopulateSelectListsAsync(request);
+                return View(request);
+            }
 
             try
             {
@@ -161,6 +171,7 @@ namespace MultfilmsMvc.Areas.Admin.Controllers
 
             return RedirectToAction(nameof(Index));
         }
+
 
         [HttpPost]
         public async Task<IActionResult> Delete(int id)

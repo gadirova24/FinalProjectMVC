@@ -38,6 +38,7 @@
     <None Remove="ViewModels\Admin\Person\" />
     <None Remove="ViewModels\Admin\Account\" />
     <None Remove="ViewModels\Admin\CartoonSlider\" />
+    <None Remove="ViewModels\Admin\Comment\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Services\" />
@@ -59,5 +60,6 @@
     <Folder Include="ViewModels\Admin\Person\" />
     <Folder Include="ViewModels\Admin\Account\" />
     <Folder Include="ViewModels\Admin\CartoonSlider\" />
+    <Folder Include="ViewModels\Admin\Comment\" />
   </ItemGroup>
 </Project>

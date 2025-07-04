@@ -41,11 +41,21 @@ namespace MultfilmsMvc.Areas.Admin.Controllers
         public async Task<IActionResult> Create(CategoryCreateVM request)
         {
             if (!ModelState.IsValid) return View(request);
+
+            var allCategories = await _categoryService.GetAllAdminAsync();
+            var isDuplicate = allCategories.Any(c =>
+                c.Name.Trim().ToLower() == request.Name.Trim().ToLower());
+
+            if (isDuplicate)
+            {
+                ModelState.AddModelError(nameof(request.Name), "A category with this name already exists.");
+                return View(request);
+            }
+
             await _categoryService.CreateAsync(request);
-
             return RedirectToAction(nameof(Index));
-
         }
+
         [HttpPost]
         public async Task<IActionResult> Delete(int id)
         {
@@ -68,9 +78,21 @@ namespace MultfilmsMvc.Areas.Admin.Controllers
         public async Task<IActionResult> Edit(int id, CategoryEditVM request)
         {
             if (!ModelState.IsValid) return View(request);
+
+            var allCategories = await _categoryService.GetAllAdminAsync();
+            var isDuplicate = allCategories.Any(c =>
+                c.Id != id && c.Name.Trim().ToLower() == request.Name.Trim().ToLower());
+
+            if (isDuplicate)
+            {
+                ModelState.AddModelError(nameof(request.Name), "A category with this name already exists.");
+                return View(request);
+            }
+
             await _categoryService.UpdateAsync(id, request);
             return RedirectToAction(nameof(Index));
         }
+
         [HttpGet]
         public async Task<IActionResult> Detail(int? id)
         {

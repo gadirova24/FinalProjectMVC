@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Domain.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Service.Services;
 using Service.Services.Interfaces;
 using Service.ViewModels.UI;
 
@@ -19,16 +20,19 @@ namespace MultfilmsMvc.Controllers
         private readonly ICartoonService _cartoonService;
         private readonly IRatingService _ratingService;
         private readonly UserManager<AppUser> _userManager;
+        private readonly ICommentService _commentService;
         private readonly IFavoriteService _favoriteService;
         public CartoonController(ICartoonService cartoonService,
                                 IRatingService ratingService,
                                   UserManager<AppUser> userManager,
-                                  IFavoriteService favoriteService)
+                                  IFavoriteService favoriteService,
+                                  ICommentService commentService)
         {
             _cartoonService = cartoonService;
             _ratingService = ratingService;
             _userManager = userManager;
             _favoriteService = favoriteService;
+            _commentService = commentService;
         }
 
       
@@ -48,7 +52,8 @@ namespace MultfilmsMvc.Controllers
                     cartoon.IsFavorite = await _favoriteService.IsFavoriteAsync(id, userId);
                 }
             }
-
+            cartoon.Comments = await _commentService.GetCommentsAsync(id); 
+            cartoon.NewComment = new CommentCreateVM { CartoonId = id };
             var watchedJson = Request.Cookies["WatchedCartoons"];
             var watchedList = string.IsNullOrEmpty(watchedJson)
                 ? new List<CartoonCookieVM>()

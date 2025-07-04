@@ -118,30 +118,52 @@
         </div>
     </div>
 </section>
-@if (User.Identity.IsAuthenticated)
-{
-    <form asp-action="AddComment" method="post">
-        <input type="hidden" asp-for="NewComment.CartoonId" />
-        <textarea asp-for="NewComment.Text" class="form-control"></textarea>
-        <span asp-validation-for="NewComment.Text" class="text-danger"></span>
-        <button type="submit" class="btn btn-primary mt-2">Оставить комментарий</button>
-    </form>
-}
-else
-{
-    <p>Войдите, чтобы оставить комментарий.</p>
-}
+<section class="comment-area">
+    <div class="container">
 
-<hr />
 
-<h5>Комментарии:</h5>
-@foreach (var comment in Model.Comments)
-{
-    <div class="mb-3">
-        <strong>@comment.UserName</strong> <span class="text-muted">@comment.CreatedAt.ToLocalTime().ToString("g")</span>
-        <p>@comment.Text</p>
+        @if (User.Identity.IsAuthenticated)
+        {
+            <form id="commentForm">
+                <input type="hidden" name="CartoonId" value="@Model.Id" />
+                <textarea name="Text" class="form-control comment-add" required></textarea>
+                <span class="text-danger d-block mt-1" id="comment-error"></span>
+                <button type="submit" class="btn btn-add-cm mt-2">Оставить комментарий</button>
+            </form>
+            <div class="comments mt-4">
+                @if (Model.Comments?.Any() == true)
+                {
+                    <h5>Комментарии:</h5>
+                    <div id="comments-list">
+                        @foreach (var comment in Model.Comments)
+                        {
+                            <div class="comment" data-comment-id="@comment.Id">
+                                <strong style="color:#eee">@comment.UserName</strong>
+                                <small class="text-muted " style="color:#eee !important">@comment.CreatedAt.ToLocalTime().ToString("g")</small>
+                                <p style="color:#eee">@comment.Text</p>
+                                @if (User.Identity.Name == comment.UserName || User.IsInRole("Admin"))
+                                {
+                                    <button class="btn btn-sm delete-comment" data-id="@comment.Id" data-cartoon-id="@Model.Id" style="color:#eee">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </button>
+                                }
+                            </div>
+
+                        }
+                    </div>
+
+                }
+
+            </div>
+
+
+        }
+
+
     </div>
-}
+
+</section>
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>$(document).on("click", ".toggle-fav", function (e) {
         e.preventDefault();
@@ -180,3 +202,118 @@ else
             }
         });
     });</script>
+<script>$(document).ready(function () {
+        $('#commentForm').on('submit', function (e) {
+            e.preventDefault();
+
+            const form = $(this);
+            const formData = form.serialize();
+
+            $.ajax({
+                url: '/Comment/Add',
+                method: 'POST',
+                data: formData,
+                success: function () {
+                    $('#comment-error').text('');
+                    const commentText = form.find('textarea[name="Text"]').val();
+
+                    const now = new Date();
+                    const formattedDate = now.toLocaleString();
+
+                    $('#comments-list').prepend(`
+                        <div class="comment">
+                            <strong style="color:#eee">Вы</strong>
+                            <small class="text-muted">${formattedDate}</small>
+                            <p style="color:#eee">${$('<div>').text(commentText).html()}</p>
+                        </div>
+                    `);
+
+                    form[0].reset();
+                },
+                error: function (xhr) {
+                    if (xhr.status === 400 && xhr.responseText) {
+                        $('#comment-error').text(xhr.responseText);
+                    } else {
+                        $('#comment-error').text('Ошибка при добавлении комментария.');
+                    }
+                }
+            });
+        });
+});
+    $(document).on('click', '.delete-comment', function (e) {
+        e.preventDefault();
+
+        const btn = $(this);
+        const commentId = btn.data('id');
+        const cartoonId = btn.data('cartoon-id');
+
+        $.ajax({
+            url: '/Comment/Delete',
+            method: 'POST',
+            data: { id: commentId, cartoonId: cartoonId },
+            success: function () {
+                $(`[data-comment-id="${commentId}"]`).remove();
+
+            
+                if ($('.comment').length === 0) {
+                    $('.comments h5').remove();
+                }
+            },
+            error: function () {
+                alert("Не удалось удалить комментарий.");
+            }
+        });
+    });
+  </script>
+
+<style>
+    #comment-area {
+        width: 100%;
+    }
+
+    .comment-add {
+        height: 200px;
+        background-color: #2e2b36;
+        border: 1px solid rgb(28 25 33);
+        margin-bottom: 30px;
+    }
+
+        .comment-add:focus {
+            outline: none;
+            box-shadow: none;
+            border: 0;
+            background-color: #2e2b36;
+            color: #fff;
+        }
+      
+
+    .btn-add-cm {
+        border: none;
+        color: #eee;
+        margin-bottom: 20px;
+        background-color: #16a085 !important;
+    }
+
+        .btn-add-cm:hover {
+            color: white;
+        }
+  
+
+    .comments {
+        width: 100%;
+        color: #eee;
+        font-size: 20px;
+        margin-top: 5%;
+    }
+
+    .comment-text {
+        color: #eee !important;
+    }
+
+    .comment-item {
+        width: 100%;
+        color: #eee;
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+</style>

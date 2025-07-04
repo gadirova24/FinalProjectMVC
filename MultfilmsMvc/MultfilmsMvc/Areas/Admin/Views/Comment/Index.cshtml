@@ -1,0 +1,39 @@
+﻿@model IEnumerable<AdminCommentVM>
+<div class="container-fluid pt-5" style="width:60%">
+    <h1>Comments</h1>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Username</th>
+                <th>Date</th>
+                <th>Cartoon</th>
+                <th>Text</th>
+                <th>Options</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var comment in Model)
+            {
+                <tr>
+                    <td>@comment.Id</td>
+                    <td>@comment.UserName</td>
+                    <td>@comment.CreatedAt.ToLocalTime().ToString("g")</td>
+                    <td>
+                        <a asp-controller="Cartoon" asp-action="Detail" asp-route-id="@comment.CartoonId">
+                            @comment.CartoonName
+                        </a>
+                    </td>
+                    <td>@comment.Text</td>
+                    <td>
+                        <form asp-action="Delete" method="post" style="display:inline">
+                            <input type="hidden" name="id" value="@comment.Id" />
+                            <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>

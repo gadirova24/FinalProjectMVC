@@ -20,6 +20,7 @@ namespace Service
             services.AddScoped<IRatingService, RatingService>();
             services.AddScoped<IEmailService, EmailService>();
             services.AddScoped<IFavoriteService, FavoriteService>();
+            services.AddScoped<ICommentService, CommentService>();
             services.AddScoped<ICartoonSliderService, CartoonSliderService>();
             return services;
 

@@ -75,7 +75,7 @@
                     @for (int i = 1; i <= Model.TotalPages; i++)
                     {
                         <li class="page-item @(Model.CurrentPage == i ? "active" : "")">
-                            <a class="page-link" asp-action="Index"
+                            <a class="page-link"style="color: #eee; background-color: transparent;"  asp-action="Index"
                                asp-controller="Genre"
                                asp-route-id="@ViewBag.GenreId"
                                asp-route-page="@i"
@@ -93,3 +93,13 @@
 
     </div>
 </section>
+
+<style>
+    .sort-items{
+        display:none;
+    }
+    .sort:hover .sort-items {
+        display: block;
+    }
+    
+</style>

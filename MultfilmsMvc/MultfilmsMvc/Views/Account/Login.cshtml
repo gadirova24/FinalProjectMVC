@@ -9,6 +9,8 @@
     <div class="container">
         <div class="title">
             <h2>Логин</h2>
+            <a style="text-decoration:none" asp-controller="Account" asp-action="Register">Регистрация</a>
+
         </div>
 
 
@@ -19,16 +21,16 @@
                     Имя пользователя E-Mail :<span class="requite"
                                                    style="color:#eb4e4b">*</span>
                 </label>
-                <input asp-for="UsernameOrEmail" id="fid-name" class="form-input"autocomplete="off">
+                <input asp-for="UsernameOrEmail" id="fid-name" class="form-input" autocomplete="off">
                 <span asp-validation-for="UsernameOrEmail" class="text-danger d-block mt-1"
                       style="text-align:left !important"></span>
 
                 <label for="fid-name">Пароль:<span class="requite" style="color:#eb4e4b">*</span></label>
-                <input asp-for="Password" id="fid-name"type="password" class="form-input"autocomplete="off">
+                <input asp-for="Password" id="fid-name" type="password" class="form-input" autocomplete="off">
                 <span asp-validation-for="Password" class="text-danger d-block mt-1"
                       style="text-align:left !important"></span>
 
-
+           
                 <div class="forgot-password"> <a asp-controller="Account" asp-action="ForgotPassword">Забыли пароль?</a></div>
 
                 @Html.ValidationSummary(true, "", new { @class = "text-danger" })

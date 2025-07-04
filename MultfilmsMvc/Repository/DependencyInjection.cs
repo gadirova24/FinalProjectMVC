@@ -20,6 +20,7 @@ namespace Repository
             services.AddScoped<IRatingRepository, RatingRepository>();
             services.AddScoped<IFavoriteRepository, FavoriteRepository>();
             services.AddScoped<ICartoonSliderRepository, CartonSliderRepository>();
+            services.AddScoped<ICommentRepository, CommentRepository>();
         }
     }
 }

@@ -5,15 +5,22 @@
 
             <div class="form-group">
                 <label for="name">Image</label>
-                <input class="form-control" id="name" asp-for="BackgroundImageFile" type="file" >
+                <input class="form-control" id="name" asp-for="BackgroundImageFile" type="file">
                 <span asp-validation-for="BackgroundImageFile" class="text-danger"></span>
             </div>
+            @*<div class="form-group">
+            <label for="name">CartoonId</label>
+            <input class="form-control" id="name" asp-for="CartoonId">
+            <span asp-validation-for="CartoonId" class="text-danger"></span>
+        </div>*@
+
             <div class="form-group">
-                <label for="name">CartoonId</label>
-                <input class="form-control" id="name" asp-for="CartoonId">
+                <label for="CartoonId">Cartoon</label>
+                <select asp-for="CartoonId" asp-items="Model.CartoonOptions" class="form-control">
+                    <option value="">-- Select Cartoon --</option>
+                </select>
                 <span asp-validation-for="CartoonId" class="text-danger"></span>
             </div>
-
 
 
 

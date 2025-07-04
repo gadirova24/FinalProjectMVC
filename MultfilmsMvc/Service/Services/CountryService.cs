@@ -106,9 +106,9 @@ namespace Service.Services
                 CartoonNames = cartoonNames
             };
         }
-        public async Task<bool> IsDuplicateAsync(string name, string imageFileName)
+        public async Task<bool> IsDuplicateAsync(string name)
         {
-            return await _countryRepo.ExistsByNameAndImageAsync(name, imageFileName);
+            return await _countryRepo.ExistsByNameAndImageAsync(name);
         }
         public async Task<AdminCountryVM> GetByIdAsync(int id)
         {

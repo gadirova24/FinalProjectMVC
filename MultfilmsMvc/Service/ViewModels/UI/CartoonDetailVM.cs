@@ -17,6 +17,8 @@ namespace Service.ViewModels.UI
         public List<string> DirectorNames { get; set; }
         public List<string> ActorNames { get; set; }
         public bool IsFavorite { get; set; } = false;
+        public CommentCreateVM NewComment { get; set; }
+        public List<CommentVM> Comments { get; set; }
     }
 }
 

@@ -3,48 +3,39 @@
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.MultfilmsMvc PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Domain/Entities/Comment.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MultfilmsMvc/Views/Cartoon/Detail.cshtml">
     <Files>
-      <File FileName="Repository/Repositories/CartoonRepository.cs" Line="185" Column="6" />
-      <File FileName="Service/Services/CartoonService.cs" Line="231" Column="89" />
-      <File FileName="Service/Services/FavoriteService.cs" Line="1" Column="1" />
-      <File FileName="Repository/Repositories/FavoriteRepository.cs" Line="1" Column="1" />
-      <File FileName="Repository/Repositories/BaseRepository.cs" Line="1" Column="1" />
-      <File FileName="Repository/Repositories/CartonSliderRepository.cs" Line="1" Column="1" />
-      <File FileName="Service/Services/CartoonSliderService.cs" Line="41" Column="17" />
-      <File FileName="MultfilmsMvc/Views/Home/Index.cshtml" Line="7" Column="1" />
-      <File FileName="Service/ViewModels/UI/CartoonSliderVM.cs" Line="1" Column="1" />
-      <File FileName="Service/Helpers/Mappings/MappingProfile.cs" Line="118" Column="1" />
-      <File FileName="MultfilmsMvc/Views/Favorite/Index.cshtml" Line="36" Column="41" />
-      <File FileName="MultfilmsMvc/Views/Cartoon/Detail.cshtml" Line="144" Column="2" />
-      <File FileName="Domain/Entities/Comment.cs" Line="12" Column="16" />
+      <File FileName="MultfilmsMvc/Views/Cartoon/Detail.cshtml" Line="159" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="MultfilmsMvc" expanded="True">
-            <Node name="Domain" expanded="True">
-              <Node name="Entities" expanded="True">
-                <Node name="Comment.cs" selected="True" />
-              </Node>
-            </Node>
             <Node name="MultfilmsMvc">
               <Node name="Views">
-                <Node name="Home" expanded="True" />
+                <Node name="Cartoon" expanded="True">
+                  <Node name="Detail.cshtml" selected="True" />
+                </Node>
+                <Node name="Collection" expanded="True" />
+                <Node name="Country" expanded="True" />
+                <Node name="Genre" expanded="True" />
+                <Node name="Studio" expanded="True" />
               </Node>
               <Node name="wwwroot" expanded="True">
                 <Node name="assets" expanded="True">
                   <Node name="css" expanded="True" />
                 </Node>
               </Node>
-              <Node name="appsettings.json" expanded="True" />
             </Node>
             <Node name="Service">
-              <Node name="Services" expanded="True">
-                <Node name="Interfaces" expanded="True" />
+              <Node name="Helpers" expanded="True">
+                <Node name="Mappings" expanded="True" />
               </Node>
-              <Node name="ViewModels" expanded="True">
-                <Node name="UI" expanded="True" />
+              <Node name="ViewModels">
+                <Node name="Admin">
+                  <Node name="Comment" expanded="True" />
+                  <Node name="Country" expanded="True" />
+                </Node>
               </Node>
             </Node>
           </Node>

@@ -1,5 +1,8 @@
 ﻿@model CartoonSliderEditVM
-
+@if (ViewData["Error"] != null)
+{
+    <div class="alert alert-danger">@ViewData["Error"]</div>
+}
 <div class="container mt-5" style="width:60%">
     <form class="forms-sample" method="post" asp-action="Edit" enctype="multipart/form-data">
 
@@ -10,10 +13,11 @@
             <span asp-validation-for="BackgroundImageFile" class="text-danger"></span>
         </div>
         <div class="form-group">
-            <label for="name"> CartoonId</label>
-            <input type="text" class="form-control" id="name" asp-for="CartoonId">
+            <label for="cartoon">Select Cartoon</label>
+            <select asp-for="CartoonId" asp-items="Model.CartoonOptions" class="form-control"></select>
             <span asp-validation-for="CartoonId" class="text-danger"></span>
         </div>
+
         <button type="submit" class="btn btn-gradient-primary me-2">Submit</button>
         <a asp-action="Index" class="btn btn-light">Cancel</a>
     </form>
