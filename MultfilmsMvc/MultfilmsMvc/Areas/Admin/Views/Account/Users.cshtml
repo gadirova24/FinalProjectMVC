@@ -1,0 +1,74 @@
+﻿@model IEnumerable<UserVM>
+
+<div class="container-fluid pt-5" style="width:60%">
+    <h1>Users List</h1>
+    <a asp-action="Create" class="btn btn-gradient-success btn-fw">Create</a>
+    <table class="table table-bordered mt-5">
+        <thead>
+            <tr>
+                <th> FullName </th>
+                <th> Email </th>
+                <th> Username </th>
+                <th> Roles </th>
+                @if (User.IsInRole("SuperAdmin"))
+                {
+                    <th>Add role</th>
+                    <th>Remove role</th>
+                }
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model)
+            {
+                <tr>
+
+                    <td>@user.FullName</td>
+                    <td>@user.Email</td>
+                    <td>@user.UserName</td>
+                    <td>@string.Join(", ", user.Roles)</td>
+                    @if (User.IsInRole("SuperAdmin"))
+                        {
+                        <td>
+                            <form asp-action="AddRole" method="post">
+                                <input type="hidden" name="UserId" value="@user.Id" />
+                                <select name="RoleName" class="form-control">
+                                    <option value="">Select role</option>
+                                    <option value="Admin">Admin</option>
+                                    <option value="SuperAdmin">SuperAdmin</option>
+                                    <option value="Member">Member</option>
+                                </select>
+                                <button type="submit" class="btn btn-sm btn-success mt-1">Add</button>
+                            </form>
+                        </td>
+                        <td>
+                            <form asp-action="RemoveRole" method="post">
+                                <input type="hidden" name="UserId" value="@user.Id" />
+                                <select name="RoleName" class="form-control">
+                                    <option value="">Select role</option>
+                                    @foreach (var role in user.Roles)
+                                        {
+                                        <option value="@role">@role</option>
+                                        }
+                                </select>
+                                <button type="submit" class="btn btn-sm btn-danger mt-1">Remove</button>
+                            </form>
+                        </td>
+                        }
+                    </tr>
+            }
+
+        </tbody>
+    </table>
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["SuccessMessage"]
+        </div>
+    }
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger">
+            @TempData["ErrorMessage"]
+        </div>
+    }
+</div>

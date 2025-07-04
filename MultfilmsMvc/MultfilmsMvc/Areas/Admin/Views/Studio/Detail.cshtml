@@ -1,0 +1,29 @@
+﻿@model StudioDetailVM
+<div class="container-fluid pt-5" style="width:60%">
+
+    <table class="table table-bordered mt-5">
+        <thead>
+            <tr>
+                <th> Image </th>
+                <th> Name </th>
+                <th> CartoonCount </th>
+                <th> CartooNames </th>
+
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td> <img src="~/assets/images/studios/@Model.Image" style="width:50px ;height:80px"></td>
+                <td>@Model.Name</td>
+                <td>@Model.CartoonCount</td>
+                <td>
+                    @string.Join(", ", Model.CartoonNames)
+                </td>
+
+            </tr>
+
+
+        </tbody>
+    </table>
+</div>

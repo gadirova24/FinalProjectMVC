@@ -1,0 +1,15 @@
+﻿@model GenreEditVM
+<div class="container mt-5" style="width:60%">
+    <form class="forms-sample" method="post" asp-action="Edit">
+        <div class="form-group">
+            <label for="name">Genre Name</label>
+            <input type="text" class="form-control" id="name" asp-for="Name">
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+
+
+        <button type="submit" class="btn btn-gradient-primary me-2">Submit</button>
+        <a asp-action="Index" class="btn btn-light">Cancel</a>
+    </form>
+
+</div>

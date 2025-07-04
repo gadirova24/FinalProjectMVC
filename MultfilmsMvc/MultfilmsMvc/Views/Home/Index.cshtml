@@ -1,0 +1,265 @@
+﻿@model HomeVM
+@section js{ <script src="~/assets/js/home.js"></script>}
+
+@{
+    int index = 0;
+}
+<section id="cartoon-slider">
+    <div class="owl-carousel owl-theme cartoon-carousel">
+        @foreach (var slider in Model.CartoonSliders)
+        {
+            <div class="item @(index == 0 ? "active" : "")">
+                <div class="slider-item">
+                    <div class="slider-context">
+                        <div class="item-title">
+                            @slider.CartoonName
+                        </div>
+                        <div class="item-about">
+                            <div class="item-raiting">@slider.AverageRating.ToString("0.0")</div>
+                            <div class="item-meta">
+                                @slider.Year
+                            </div>
+                            <div class="item-meta">
+                                @if (slider.GenreNames != null && slider.GenreNames.Any())
+                                {
+                                    @foreach (var genre in slider.GenreNames)
+                                    {
+                                        <a href="#">@genre</a>@(genre != slider.GenreNames.Last() ? ", " : "")
+                                    }
+                                }
+                            </div>
+                        </div>
+
+                        <div class="item-text">
+                            @slider.Plot
+
+                        </div>
+                        <div class="item-slider-btn">
+                            <a asp-controller="Cartoon" asp-action="Detail" asp-route-id="@slider.CartoonId" class="btn item-btn">
+                                Смотреть
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="slider-image">
+                        <img src="~/assets/images/cartoons/@slider.BackgroundImage" alt="">
+                    </div>
+                    <div class="overlay"></div>
+                </div>
+
+
+            </div>
+            index++;
+        }
+    </div>
+</section>
+
+
+
+<section id="popular-cartoons-slider">
+    <div class="container">
+        <div class="title">
+            <h2>Популярное </h2>
+        </div>
+        <div class="cartoon-slider">
+            <div class="owl-carousel owl-theme owl-loaded owl-drag owl-cartoon-carousel">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage">
+                        @foreach (var cartoon in Model.TopRated)
+                        {
+                            <div class="owl-item">
+                                <a asp-controller="Cartoon" asp-action="Detail" asp-route-id="@cartoon.Id">
+                                    <div class="slider-item">
+                                        <div class="cartoon-image">
+                                            <img src="~/assets/images/cartoons/@cartoon.Image" alt="">
+                                            <div class="overlay">
+                                                <i class="fa-solid fa-play"></i>
+                                                <div class="item-raiting">@cartoon.AverageRating.ToString("0.0")</div>
+
+                                            </div>
+                                        </div>
+                                        <div class="cartoon-description">
+                                            <a asp-controller="Cartoon" asp-action="Detail" asp-route-id="@cartoon.Id">
+                                                <span>@cartoon.Name</span>
+                                            </a>
+                                            <div class="item-about">
+                                                <div class="item-category">@cartoon.CategoryName</div>
+                                                <div class="item-year">@cartoon.Year</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+                        }
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section id="studios">
+    <div class="container">
+        <div class="title">
+            <h2>Студии</h2>
+        </div>
+        <div class="studio-slider">
+
+            <div class="owl-carousel owl-theme owl-loaded owl-drag studio-carousel">
+                <div class="owl-stage-outer">
+
+                    <div class="owl-stage">
+                        @foreach (var studio in Model.Studios)
+                        {
+                            <div class="owl-item">
+                                <a asp-controller="Studio" asp-action="Index" asp-route-id="@studio.Id">
+                                    <div class="slider-item">
+                                        <div class="image-item">
+                                            <img src="~/assets/images/studios/@studio.Image" alt="">
+                                            <div class="overlay"></div>
+                                        </div>
+                                        <div class="slider-desc">
+                                            <h4>
+                                                @studio.Name
+                                            </h4>
+                                            <span>
+                                                @studio.CartoonCount мультфильм(ов)
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                </a>
+
+                            </div>
+                        }
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</section>
+<section id="new-items">
+    <div class="container">
+        <div class="title">
+            <h2>Последние новинки</h2>
+        </div>
+        <div class="row">
+            @foreach (var cartoon in Model.Cartoons)
+            {
+                <div class="col-lg-2 col-6 col-md-3">
+                    <div class="cartoon-item">
+                        <div class="cartoon-image">
+                            <a asp-controller="Cartoon" asp-action="Detail" asp-route-id="@cartoon.Id">
+                                <img src="~/assets/images/cartoons/@cartoon.Image" alt="">
+
+                                <div class="overlay">
+                                    <i class="fa-solid fa-play"></i>
+                                    <div class="item-raiting">@cartoon.AverageRating.ToString("0.0") </div>
+
+                                </div>
+
+                            </a>
+                        </div>
+                        <div class="cartoon-description">
+                            <a class="item-title" href="#">
+                                <span>@cartoon.Name</span>
+                            </a>
+                            <div class="item-about">
+                                <div class="item-category">@cartoon.CategoryName</div>
+                                <div class="item-year">@cartoon.Year</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+
+
+        </div>
+    </div>
+</section>
+<section id="collections">
+    <div class="container">
+        <div class="title">
+            <h2>Коллекции мультфильмов</h2>
+        </div>
+        @if (Model.Collections != null && Model.Collections.Any())
+        {
+            <div class="row">
+                @foreach (var collection in Model.Collections)
+                {
+                    <div class="col-lg-4 col-12 col-md-6">
+                        <a asp-controller="Collection" asp-action="Index" asp-route-id="@collection.Id">
+                            <div class="country-item">
+                                <div class="left-item">
+
+                                    <p>@collection.Name</p>
+                                    <span>@collection.CartoonCount мультфильм(ов)</span>
+                                </div>
+                                <div class="right-item">
+
+                                    <img src="~/assets/images/collections/@collection.Image" alt="">
+
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                }
+
+
+            </div>
+        }
+        else
+        {
+            <p>No collections found.</p>
+        }
+    </div>
+</section>
+<section id="countries">
+    <div class="container">
+        <div class="title">
+            <h2>Мультфильмы по странам</h2>
+        </div>
+        @if (Model.Countries != null && Model.Countries.Any())
+        {
+            <div class="row">
+                @foreach (var country in Model.Countries)
+                {
+                    <div class="col-lg-4 col-12 col-md-6">
+                        <a asp-controller="Country" asp-action="Index" asp-route-id="@country.Id">
+                            <div class="country-item">
+                                <div class="left-item">
+
+                                    <p>@country.Name</p>
+                                    <span>@country.CartoonCount  мультфильм(ов)</span>
+                                </div>
+                                <div class="right-item">
+
+                                    <img src="~/assets/images/countries/@country.Image " alt="">
+
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                }
+
+
+            </div>
+        }
+        else
+        {
+            <p>No countries found.</p>
+        }
+    </div>
+</section>
+
+

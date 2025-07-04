@@ -1,0 +1,102 @@
+﻿
+@model SidebarVM
+<div class="sidebar" style="top:70px">
+    <ul class="sidebar-menu">
+        <li class="menu">
+            <a asp-controller="Home" asp-action="Index">
+                <i class="fa-regular fa-compass"></i>
+                <span>Главная</span>
+            </a>
+        </li>
+
+    </ul>
+    <hr>
+
+    <ul class="sidebar-menu">
+        <li class="menu">
+            <a href="#">
+                <i class="fa-regular fa-folder"></i>
+                <span>Коллекции</span>
+                <ul class="menu-hidden">
+                    @foreach (var collection in Model.Collections)
+                    {
+                        <li>
+                            <a class="submenu" asp-controller="Collection" asp-action="Index" asp-route-id="@collection.Id">
+                                @collection.Name
+                            </a>
+                        </li>
+                    }
+                </ul>
+            </a>
+        </li>
+        <li class="menu">
+            <a href="#">
+                <i class="fa-regular fa-folder"></i>
+                <span>Жанры</span>
+              
+                    <ul class="menu-hidden">
+                        @foreach (var genre in Model.Genres)
+                        {
+                            <li>
+                                <a class="submenu" asp-controller="Genre" asp-action="Index" asp-route-id="@genre.Id">
+                                    @genre.Name
+                                </a>
+                            </li>
+                        }
+                    </ul>
+            </a>
+
+        </li>
+
+
+
+        <li class="menu">
+            <a href="#">
+                <i class="fa-regular fa-folder"></i>
+                <span>Студии</span>
+                <ul class="menu-hidden">
+                    @foreach (var studio in Model.Studios)
+                    {
+                        <li>
+                            <a class="submenu" asp-controller="Studio" asp-action="Index" asp-route-id="@studio.Id">
+                                @studio.Name
+                            </a>
+                        </li>
+                    }
+                </ul>
+            </a>
+
+        </li>
+
+        <li class="menu">
+            <a href="#">
+                <i class="fa-regular fa-folder"></i>
+                <span>Страны</span>
+                <ul class="menu-hidden">
+                    @foreach (var country in Model.Countries)
+                    {
+                        <li>
+                            <a class="submenu" asp-controller="Country" asp-action="Index" asp-route-id="@country.Id">
+                                @country.Name
+                            </a>
+                        </li>
+                    }
+                </ul>
+            </a>
+        </li>
+    </ul>
+    <hr>
+
+    <ul class="sidebar-menu">
+        <li class="menu">
+            <a asp-controller="Cartoon" asp-action="YouWatched">
+                <i class="fa-regular fa-eye"></i>
+                <span>       Вы смотрели</span>
+
+            </a>
+        </li>
+
+
+
+    </ul>
+</div>

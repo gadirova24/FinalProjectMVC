@@ -1,0 +1,182 @@
+﻿@*@section css{
+        <link rel="stylesheet" href="~/assets/css/home.css">
+    }*@
+@model CartoonDetailVM
+<section id="cartoon-detail">
+    <div class="container mt-5">
+        <div class="detail-item">
+            <div class="row">
+                <div class="col-lg-3 col-12 col-md-12">
+                    <div class="cartoon-image">
+                        <img src="~/assets/images/cartoons/@Model.Image" alt="">
+                    </div>
+
+                </div>
+                <div class="col-lg-9 col-12 col-md-12">
+                    <div class="cartoon-desc">
+                        <div class="title">
+                            <h1>@Model.Name</h1>
+                        </div>
+                        <div class="cartoon-category">@Model.CategoryName</div>
+                        <div class="item-reviews d-flex">
+
+                            <div class="item-raiting">@Model.AverageRating.ToString("0.0") </div>
+
+                            <span>
+                                Рейтинг пользователей
+
+                            </span>
+                            <div class="item-stars" style="padding-top:8px" data-cartoon-id="@Model.Id">
+                                @for (int i = 1; i <= 5; i++)
+                                {
+                                    <i style="font-size:18px;color:gold;cursor:pointer" class="fa-star fa star-icon @(i <= (int)Math.Round(Model.AverageRating) ? "fa-solid" : "fa-regular")"
+                                       data-value="@i"></i>
+                                }
+                            </div>
+
+
+
+                            <div class="fav" style="padding-top:1px">
+                                @if (User.Identity.IsAuthenticated)
+                                {
+                                    <a href="#" class="toggle-fav" data-cartoon-id="@Model.Id" data-is-favorite="@Model.IsFavorite.ToString().ToLower()">
+                                        <i class="@(Model.IsFavorite ? "fa-solid fa-heart text-danger" : "fa-regular fa-heart")"></i>
+                                    </a>
+                                }
+                                else
+                                {
+                                    <a href="@Url.Action("Login", "Account", new { returnUrl = Context.Request.Path })">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </a>
+                                }
+                            </div>
+                        </div>
+
+
+                        <ul class="cartoon-details">
+                            <li>
+                                <span>Год:</span>
+                                @Model.Year
+                            </li>
+                            <li>
+                                <span>Студия:</span>
+                                <a> @string.Join(", ", Model.StudioNames)</a>
+                            </li>
+
+                            <li>
+                                <span>Страна:</span>
+                                <a> @string.Join(", ", Model.CountryNames)</a>
+                            </li>
+
+                            <li>
+                                <span>Жанры:</span>
+                                <a> @string.Join(", ", Model.GenreNames)</a>
+                            </li>
+                            @if (Model.DirectorNames?.Any() == true)
+                            {
+                                <li>
+                                    <span>Режиссеры:</span>
+                                    @string.Join(", ", Model.DirectorNames)
+                                </li>
+                            }
+
+                            @if (Model.ActorNames?.Any() == true)
+                            {
+                                <li>
+                                    <span>Актеры:</span>
+                                    @string.Join(", ", Model.ActorNames)
+                                </li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="cartoon-plot">
+            <h2>Сюжет мультфильма</h2>
+            <div class="cartoon-text">
+                @Model.Plot
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="cartoon-video">
+    <div class="container">
+        <div class="title"> @Model.Name (@Model.Year)  смотреть онлайн бесплатно в хорошем качестве</div>
+        <div class="cartoon-player">
+            <div class="video-wrapper">
+                <iframe width="100%" height="480"
+                        src="@Model.PlayerUrl"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>
+@if (User.Identity.IsAuthenticated)
+{
+    <form asp-action="AddComment" method="post">
+        <input type="hidden" asp-for="NewComment.CartoonId" />
+        <textarea asp-for="NewComment.Text" class="form-control"></textarea>
+        <span asp-validation-for="NewComment.Text" class="text-danger"></span>
+        <button type="submit" class="btn btn-primary mt-2">Оставить комментарий</button>
+    </form>
+}
+else
+{
+    <p>Войдите, чтобы оставить комментарий.</p>
+}
+
+<hr />
+
+<h5>Комментарии:</h5>
+@foreach (var comment in Model.Comments)
+{
+    <div class="mb-3">
+        <strong>@comment.UserName</strong> <span class="text-muted">@comment.CreatedAt.ToLocalTime().ToString("g")</span>
+        <p>@comment.Text</p>
+    </div>
+}
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>$(document).on("click", ".toggle-fav", function (e) {
+        e.preventDefault();
+
+        const anchor = $(this);
+        const icon = anchor.find("i");
+        const cartoonId = anchor.data("cartoon-id");
+
+        $.post("/Favorite/Toggle", { cartoonId: cartoonId }, function (res) {
+            if (res.success) {
+                icon.toggleClass("fa-regular fa-solid text-danger");
+            } else if (res.redirectUrl) {
+                window.location.href = res.redirectUrl;
+            }
+        }).fail(function () {
+            alert("Ошибка при добавлении в избранное. Возможно, вы не вошли в систему.");
+        });
+    });
+
+    $(document).on("click", ".item-stars i", function () {
+        const value = $(this).data("value");
+        const container = $(this).closest(".item-stars");
+        const cartoonId = container.data("cartoon-id");
+        const stars = container.find("i");
+        const ratingDisplay = container.closest(".item-reviews").find(".item-raiting");
+
+        $.post("/Rating/Rate", { cartoonId, value }, function (res) {
+            if (res.success) {
+                stars.each(function () {
+                    const starVal = $(this).data("value");
+                    $(this).toggleClass("fa-solid", starVal <= value);
+                    $(this).toggleClass("fa-regular", starVal > value);
+                });
+
+                ratingDisplay.text(res.average.toFixed(1));
+            }
+        });
+    });</script>

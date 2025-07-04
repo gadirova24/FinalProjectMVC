@@ -1,0 +1,95 @@
+﻿ @model CartoonListVM
+<section id="content">
+    <div class="container ">
+        <div class="row">
+            <div class="col-lg-10 col-12 col-md-12">
+                <div class="title">
+                    <h2>Мультфильмы @ViewBag.StudioName</h2>
+                </div>
+            </div>
+            <div class="col-lg-2 col-12 col-md-12">
+                <div class="sort">
+                    <a class="srt-btn" href="#">
+                        <i class="fa-solid fa-arrow-down-wide-short"></i>
+                        Сортировка по
+                    </a>
+
+                    <form name="sort" action="">
+                        <ul class="sort-items">
+                            <li class="by-date"><a href="@Url.Action("Index", new { id = ViewBag.StudioId, page = 1, sort = "date" })">дате</a></li>
+                            <li><a href="@Url.Action("Index", new { id = ViewBag.StudioId, page = 1, sort = "alphabet" })">алфавиту</a></li>
+                        </ul>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="multfilms">
+            @if ((bool)ViewBag.HasCartoons)
+            {
+                <div class="row">
+                    @foreach (var cartoon in Model.Cartoons)
+                    {
+                        <div class="col-lg-2 col-6 col-md-3">
+                           
+                            <div class="cartoon-item">
+                                <div class="cartoon-image">
+                                    <a asp-controller="Cartoon" asp-action="Detail" asp-route-id="@cartoon.Id">
+                                        <img src="~/assets/images/cartoons/@cartoon.Image" alt="">
+
+                                        <div class="overlay">
+                                            <i class="fa-solid fa-play"></i>
+                                            <div class="item-raiting">@cartoon.AverageRating.ToString("0.0") </div>
+
+                                        </div>
+
+                                    </a>
+                                </div>
+                                <div class="cartoon-description">
+                                    <a class="item-title" href="#">
+                                        <span>@cartoon.Name</span>
+                                    </a>
+                                    <div class="item-about">
+                                        <div class="item-category">@cartoon.CategoryName</div>
+                                        <div class="item-year">@cartoon.Year</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+
+
+                </div>
+            }
+            else
+            {
+                <div class="alert mt-4" style="color:#eee;border:none">
+                    <h4>Нет мультфильмов от этой студии.</h4>
+                </div>
+            }
+        </div>
+        @if (Model.TotalPages > 1)
+        {
+            <nav class="mt-4">
+                <ul class="pagination">
+                    @for (int i = 1; i <= Model.TotalPages; i++)
+                    {
+                        <li class="page-item @(Model.CurrentPage == i ? "active" : "")">
+                            <a class="page-link" asp-action="Index"
+                               asp-controller="Studio"
+                               asp-route-id="@ViewBag.StudioId"
+                               asp-route-page="@i"
+                               asp-route-sort="@ViewBag.Sort">
+
+                                @i
+                            </a>
+                        </li>
+                    }
+                </ul>
+            </nav>
+        }
+
+
+
+    </div>
+</section>

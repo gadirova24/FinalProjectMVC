@@ -1,0 +1,82 @@
+﻿@model List<CartoonVM>
+
+@{
+    var query = ViewBag.Query as string;
+    int pageSize = 6;
+}
+
+<section id="content">
+    <div class="container">
+        <div class="title">
+            <h2>Результаты поиска</h2>
+        </div>
+
+        @if (!Model.Any())
+        {
+            <p style="color:white">
+                К сожалению, поиск не дал результатов по запросу "<strong>@query</strong>".
+            </p>
+        }
+        else
+        {
+            <div class="multfilms">
+                <div class="row" id="cartoon-list">
+                    @for (int i = 0; i < Model.Count; i++)
+                    {
+                        var cartoon = Model[i];
+                        var hiddenClass = i >= pageSize ? "d-none" : "";
+                        <div class="col-lg-2 col-6 col-md-3 cartoon-item-wrapper @hiddenClass">
+                            <div class="cartoon-item">
+                                <div class="cartoon-image">
+                                    <a asp-controller="Cartoon" asp-action="Detail" asp-route-id="@cartoon.Id">
+                                        <img src="~/assets/images/cartoons/@cartoon.Image" alt="">
+                                        <div class="overlay">
+                                            <i class="fa-solid fa-play"></i>
+                                            <div class="item-raiting">@cartoon.AverageRating.ToString("0.0")</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="cartoon-description">
+                                    <a class="item-title" href="#">
+                                        <span>@cartoon.Name</span>
+                                    </a>
+                                    <div class="item-about">
+                                        <div class="item-category">@cartoon.CategoryName</div>
+                                        <div class="item-year">@cartoon.Year</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+
+                @if (Model.Count > pageSize)
+                {
+                    <div class="text-center mt-4">
+                        <button id="showMoreBtn" style="background-color: #63b581;border-style:none;border-radius:22px;font-size:11px" class="btn btn-primary">Показать ещё</button>
+                    </div>
+                }
+            </div>
+        }
+    </div>
+</section>
+
+@section Scripts {
+    <script>
+        let visibleCount = @pageSize;
+        const pageSize = @pageSize;
+        const total = @Model.Count;
+
+        document.getElementById("showMoreBtn")?.addEventListener("click", () => {
+            const items = document.querySelectorAll(".cartoon-item-wrapper.d-none");
+            for (let i = 0; i < pageSize && i < items.length; i++) {
+                items[i].classList.remove("d-none");
+            }
+
+            visibleCount += pageSize;
+            if (visibleCount >= total) {
+                document.getElementById("showMoreBtn").style.display = "none";
+            }
+        });
+    </script>
+}

@@ -1,0 +1,183 @@
+﻿@model AdminCartoonDetailVM
+<div class="container-fluid pt-5" style="width:60%">
+
+ 
+
+    <table class="table table-bordered mt-2">
+        <thead>
+            <tr>
+                <th> Image </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="~/assets/images/cartoons/@Model.Image" style="width:80px ;height:100px"></td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <table class="table table-bordered mt-5">
+        <thead>
+            <tr>
+                <th> Name </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@Model.Name</td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-bordered mt-5">
+        <thead>
+            <tr>
+                <th> Plot </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@Model.Plot</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+
+    <table class="table table-bordered mt-5">
+        <thead>
+            <tr>
+                <th> Year </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@Model.Year</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+
+    <table class="table table-bordered mt-5">
+        <thead>
+            <tr>
+                <th> PlayerUrl </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@Model.PlayerUrl</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <table class="table table-bordered mt-5">
+        <thead>
+            <tr>
+                <th> CategoryName </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@Model.CategoryName</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <table class="table table-bordered mt-5">
+        <thead>
+            <tr>
+                <th> StudioNames </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@string.Join(", ", Model.StudioNames)</td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-bordered mt-5">
+        <thead>
+            <tr>
+                <th> CollectionNames </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@string.Join(", ", Model.CollectionNames)</td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-bordered mt-5">
+        <thead>
+            <tr>
+                <th> GenreNames </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@string.Join(", ", Model.GenreNames)</td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-bordered mt-5">
+        <thead>
+            <tr>
+                <th> GenreNames </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@string.Join(", ", Model.CountryNames)</td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-bordered mt-5">
+        <thead>
+            <tr>
+                <th> GenreNames </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@string.Join(", ", Model.DirectorNames)</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+    <table class="table table-bordered mt-5">
+        <thead>
+            <tr>
+                <th> GenreNames </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@string.Join(", ", Model.ActorNames)</td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-bordered mt-5">
+        <thead>
+            <tr>
+                <th> AverageRating </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@Model.AverageRating.ToString("0.0")</td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>

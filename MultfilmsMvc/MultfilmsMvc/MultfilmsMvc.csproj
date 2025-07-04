@@ -1,0 +1,99 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Controllers\" />
+    <None Remove="Views\Home\" />
+    <None Remove="Views\Shared\Components\" />
+    <None Remove="Views\Shared\Components\Header\" />
+    <None Remove="Views\Shared\Components\Footer\" />
+    <None Remove="Views\Shared\Components\Sidebar\" />
+    <None Remove="ViewComponents\" />
+    <None Remove="Areas\" />
+    <None Remove="Areas\Admin\" />
+    <None Remove="Areas\Admin\Controllers\" />
+    <None Remove="Areas\Admin\Views\" />
+    <None Remove="Areas\Admin\Views\Shared\" />
+    <None Remove="Areas\Admin\Views\Dashboard\" />
+    <None Remove="Areas\Admin\Views\Country\" />
+    <None Remove="Areas\Admin\Views\Collection\" />
+    <None Remove="Areas\Admin\Views\Studio\" />
+    <None Remove="Views\Account\" />
+    <None Remove="Views\Country\" />
+    <None Remove="Views\Collection\" />
+    <None Remove="Views\Studio\" />
+    <None Remove="Areas\Admin\Views\Category\" />
+    <None Remove="Areas\Admin\Views\Genre\" />
+    <None Remove="Areas\Admin\Views\Cartoon\" />
+    <None Remove="Areas\Admin\Views\Person\" />
+    <None Remove="Views\Cartoon\" />
+    <None Remove="Views\Genre\" />
+    <None Remove="Views\Favorite\" />
+    <None Remove="Middlewares\" />
+    <None Remove="Areas\Admin\Views\Account\" />
+    <None Remove="Areas\Admin\Views\CartoonSlider\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="Views\Home\" />
+    <Folder Include="Views\Shared\Components\" />
+    <Folder Include="Views\Shared\Components\Header\" />
+    <Folder Include="Views\Shared\Components\Footer\" />
+    <Folder Include="Views\Shared\Components\Sidebar\" />
+    <Folder Include="wwwroot\" />
+    <Folder Include="ViewComponents\" />
+    <Folder Include="Areas\" />
+    <Folder Include="Areas\Admin\" />
+    <Folder Include="Areas\Admin\Controllers\" />
+    <Folder Include="Areas\Admin\Views\" />
+    <Folder Include="Areas\Admin\Views\Shared\" />
+    <Folder Include="wwwroot\admin\" />
+    <Folder Include="Areas\Admin\Views\Dashboard\" />
+    <Folder Include="Areas\Admin\Views\Country\" />
+    <Folder Include="Areas\Admin\Views\Collection\" />
+    <Folder Include="Areas\Admin\Views\Studio\" />
+    <Folder Include="Views\Account\" />
+    <Folder Include="Views\Country\" />
+    <Folder Include="Views\Collection\" />
+    <Folder Include="Views\Studio\" />
+    <Folder Include="Areas\Admin\Views\Category\" />
+    <Folder Include="Areas\Admin\Views\Genre\" />
+    <Folder Include="Areas\Admin\Views\Cartoon\" />
+    <Folder Include="Areas\Admin\Views\Person\" />
+    <Folder Include="Views\Cartoon\" />
+    <Folder Include="Views\Genre\" />
+    <Folder Include="Views\Favorite\" />
+    <Folder Include="Middlewares\" />
+    <Folder Include="Areas\Admin\Views\Account\" />
+    <Folder Include="Areas\Admin\Views\CartoonSlider\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Service\Service.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.35" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.35">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.35">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="MimeKit" Version="4.12.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.35" />
+    <PackageReference Include="Serilog.AspNetCore" Version="9.0.0" />
+    <PackageReference Include="Serilog.Sinks.File" Version="7.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\" />
+    <Content Remove="wwwroot\admin\" />
+  </ItemGroup>
+</Project>

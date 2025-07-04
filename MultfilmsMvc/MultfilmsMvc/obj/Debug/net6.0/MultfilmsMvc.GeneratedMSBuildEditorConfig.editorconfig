@@ -1,0 +1,261 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MultfilmsMvc
+build_property.RootNamespace = MultfilmsMvc
+build_property.ProjectDir = /Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Areas/Admin/Views/Account/Roles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQWNjb3VudC9Sb2xlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Areas/Admin/Views/Account/Users.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQWNjb3VudC9Vc2Vycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Areas/Admin/Views/Cartoon/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ2FydG9vbi9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Areas/Admin/Views/Cartoon/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ2FydG9vbi9EZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Areas/Admin/Views/Cartoon/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ2FydG9vbi9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Areas/Admin/Views/Cartoon/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ2FydG9vbi9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Areas/Admin/Views/CartoonSlider/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ2FydG9vblNsaWRlci9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Areas/Admin/Views/CartoonSlider/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ2FydG9vblNsaWRlci9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Areas/Admin/Views/CartoonSlider/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ2FydG9vblNsaWRlci9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Areas/Admin/Views/Category/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ2F0ZWdvcnkvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Areas/Admin/Views/Category/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ2F0ZWdvcnkvRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Areas/Admin/Views/Category/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ2F0ZWdvcnkvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Areas/Admin/Views/Category/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ2F0ZWdvcnkvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Areas/Admin/Views/Collection/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ29sbGVjdGlvbi9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Areas/Admin/Views/Collection/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ29sbGVjdGlvbi9EZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Areas/Admin/Views/Collection/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ29sbGVjdGlvbi9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Areas/Admin/Views/Collection/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ29sbGVjdGlvbi9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Areas/Admin/Views/Country/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ291bnRyeS9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Areas/Admin/Views/Country/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ291bnRyeS9EZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Areas/Admin/Views/Country/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ291bnRyeS9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Areas/Admin/Views/Country/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQ291bnRyeS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Areas/Admin/Views/Dashboard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvRGFzaGJvYXJkL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Areas/Admin/Views/Genre/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvR2VucmUvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Areas/Admin/Views/Genre/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvR2VucmUvRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Areas/Admin/Views/Genre/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvR2VucmUvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Areas/Admin/Views/Genre/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvR2VucmUvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Areas/Admin/Views/Person/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvUGVyc29uL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Areas/Admin/Views/Person/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvUGVyc29uL0RldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Areas/Admin/Views/Person/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvUGVyc29uL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Areas/Admin/Views/Person/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvUGVyc29uL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Areas/Admin/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Areas/Admin/Views/Studio/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU3R1ZGlvL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Areas/Admin/Views/Studio/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU3R1ZGlvL0RldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Areas/Admin/Views/Studio/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU3R1ZGlvL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Areas/Admin/Views/Studio/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU3R1ZGlvL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Areas/Admin/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Areas/Admin/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Views/Account/EmailConfirmed.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9FbWFpbENvbmZpcm1lZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Views/Account/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9FcnJvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Views/Account/ForgotPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9Gb3Jnb3RQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Views/Account/ForgotPasswordConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9Gb3Jnb3RQYXNzd29yZENvbmZpcm1hdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9Mb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9SZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Views/Account/RegisterConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9SZWdpc3RlckNvbmZpcm1hdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Views/Account/ResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9SZXNldFBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Views/Account/ResetPasswordConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9SZXNldFBhc3N3b3JkQ29uZmlybWF0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Views/Cartoon/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FydG9vbi9EZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Views/Cartoon/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FydG9vbi9TZWFyY2guY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Views/Cartoon/YouWatched.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FydG9vbi9Zb3VXYXRjaGVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Views/Collection/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29sbGVjdGlvbi9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Views/Country/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ291bnRyeS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Views/Favorite/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRmF2b3JpdGUvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Views/Genre/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvR2VucmUvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Views/Shared/Components/Footer/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvRm9vdGVyL0RlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Views/Shared/Components/Header/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvSGVhZGVyL0RlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Views/Shared/Components/Sidebar/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvU2lkZWJhci9EZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Views/Studio/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3R1ZGlvL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-xxhic835ct

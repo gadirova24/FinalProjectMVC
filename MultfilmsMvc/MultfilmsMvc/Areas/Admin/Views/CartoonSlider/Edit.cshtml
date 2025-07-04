@@ -1,0 +1,21 @@
+﻿@model CartoonSliderEditVM
+
+<div class="container mt-5" style="width:60%">
+    <form class="forms-sample" method="post" asp-action="Edit" enctype="multipart/form-data">
+
+        <div class="form-group">
+            <img src="~/assets/images/cartoons/@Model.ExistingImage" style="width:200px;height:100px ;margin-bottom:10px" />
+            <label for="Image"></label>
+            <input class="form-control" id="name" asp-for="BackgroundImageFile">
+            <span asp-validation-for="BackgroundImageFile" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label for="name"> CartoonId</label>
+            <input type="text" class="form-control" id="name" asp-for="CartoonId">
+            <span asp-validation-for="CartoonId" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-gradient-primary me-2">Submit</button>
+        <a asp-action="Index" class="btn btn-light">Cancel</a>
+    </form>
+
+</div>

@@ -1,0 +1,371 @@
+body {
+  font-family: "inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+body header {
+  width: 100%;
+  height: 70px;
+  background-color: #27232d;
+}
+body header .container nav {
+  padding-top: 10px;
+  display: flex;
+}
+body header .container nav .headermenu {
+  padding-top: 6px;
+}
+body header .container nav .headermenu a {
+  width: 5%;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+  color: #a8a7aa;
+}
+body header .container nav .headermenu a:hover {
+  color: #0c8f75;
+}
+body header .container nav .headerlogo {
+  padding-top: 5px;
+  margin-left: 38px;
+}
+body header .container nav .headerlogo a {
+  font-weight: 700;
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+}
+body header .header-search {
+  position: relative;
+  width: 650px;
+  margin-left: 12%;
+}
+body header .header-search .search {
+  width: 100%;
+  padding: 0 30px 0 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border: 0;
+  line-height: 50px;
+}
+body header .header-search .search:focus {
+  outline: none;
+  box-shadow: none;
+  border: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+body header .header-search .search:focus::-moz-placeholder {
+  opacity: 0;
+}
+body header .header-search .search:focus::placeholder {
+  opacity: 0;
+}
+body header .header-search .search-icon {
+  position: absolute;
+  background: none;
+  height: 50px;
+  font-size: 18px;
+  color: #a8a7aa;
+  width: 55px;
+  border: none;
+  top: 0;
+  left: 0;
+}
+body header .header-search .search-icon:hover {
+  color: #0c8f75;
+}
+body header .header-account {
+  width: 20%;
+  margin-left: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+body header .header-account .register {
+  text-decoration: none;
+  color: #a8a7aa;
+  margin-top: 6%;
+}
+body header .header-account .login-btn {
+  position: relative;
+  padding: 0 40px;
+  color: white;
+  font-size: 14px;
+  border: none;
+  height: 50px;
+  border-radius: 30px;
+  background-color: #16a185;
+}
+body header .header-account .login-btn i {
+  margin-left: 3px;
+  font-size: 13px;
+}
+body header .header-account .login-btn:hover {
+  background-color: #0c8f75;
+}
+body header .header-profile {
+  width: 15%;
+  position: relative;
+  margin-left: 11%;
+  text-align: right;
+  padding-top: 6px;
+}
+body header .header-profile .profile-icon {
+  font-size: 25px;
+  margin-left: 20%;
+  transition: 0.3s;
+  color: #a8a7aa;
+}
+body header .header-profile .profile-icon:hover {
+  color: #0c8f75;
+}
+body header .header-profile .profile {
+  position: absolute;
+  visibility: hidden;
+  right: 0;
+  top: 100%;
+  width: 260px;
+  background-color: #383342;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  color: #eee;
+  list-style: none;
+  z-index: 100;
+  text-align: left;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+body header .header-profile .profile li {
+  margin-bottom: 8%;
+}
+body header .header-profile .profile li a {
+  font-size: 15px;
+  transition: width 0.3s ease;
+}
+body header .header-profile .profile li a i {
+  margin-right: 12px;
+}
+body header .header-profile .profile li a:hover {
+  border-bottom: 1px solid #fff;
+}
+body .sidebar {
+  width: 280px;
+  position: absolute;
+  z-index: 10;
+  height: 100vh;
+  background-color: #2e2a36;
+  border-right: 1px solid rgb(0, 0, 0);
+  padding-top: 2%;
+  overflow-y: auto;
+  visibility: hidden;
+  transform: translateX(-100%);
+  transition: visibility 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+  z-index: 20;
+}
+body .sidebar hr {
+  width: 199px;
+  margin-left: 22%;
+  border: 1px solid #1c1921;
+}
+body .sidebar .sidebar-menu {
+  list-style: none;
+  padding-left: 22%;
+}
+body .sidebar .sidebar-menu .menu {
+  width: 195px;
+  cursor: pointer;
+  height: 40px;
+  padding-top: 3%;
+  padding-left: 4%;
+  border-radius: 5px;
+  margin-bottom: 3%;
+  transition: 0.3s;
+}
+body .sidebar .sidebar-menu .menu:hover {
+  background-color: #292631;
+}
+body .sidebar .sidebar-menu .menu a {
+  gap: 15px;
+  font-size: 18px;
+}
+body .sidebar .sidebar-menu .menu a span {
+  margin-left: 10%;
+}
+body footer {
+  width: 100%;
+  background-color: #383442;
+  border-top: 2px solid #221f28;
+}
+body footer .container {
+  padding: 70px;
+}
+body footer .container .footer-about {
+  width: 100%;
+}
+body footer .container .footer-about .footer-logo {
+  margin-bottom: 5%;
+}
+body footer .container .footer-about .footer-logo a {
+  font-weight: 700;
+  font-size: 25px;
+  color: #eeeeee;
+  text-decoration: none;
+  margin-bottom: 3%;
+}
+body footer .container .footer-about .footer-text p {
+  font-size: 15px;
+  color: #eee;
+}
+body footer .container .footer-menu {
+  width: 100%;
+}
+body footer .container .footer-menu .footer-menu-title {
+  font-weight: bold;
+  color: #eeeeee;
+  margin-left: 8%;
+}
+body footer .container .footer-menu ul {
+  list-style: none;
+  margin-top: 3%;
+  display: flex;
+  flex-wrap: wrap;
+}
+body footer .container .footer-menu ul li {
+  margin-bottom: 10px;
+  margin-right: 16%;
+}
+body footer .container .footer-menu ul li a {
+  text-decoration: none;
+  color: #d9d4d4;
+}
+body #login {
+  width: 100%;
+  background-color: #383442;
+}
+body #login .container {
+  padding-top: 3%;
+  width: 1200px;
+}
+body #login .container .title {
+  margin-bottom: 2%;
+}
+body #login .container .title h2 {
+  font-size: 20px;
+  color: #eeeeee;
+  font-weight: bold;
+}
+body #login .container .form {
+  padding-bottom: 10%;
+}
+body #login .container .form label {
+  color: #eeeeee;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+body #login .container .form .form-input {
+  width: 100%;
+  height: 40px;
+  background-color: #2e2a36;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  display: block;
+  box-shadow: none;
+  color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+body #login .container .form .form-input:focus {
+  outline: none;
+  border: 1px solid #16a085;
+  box-shadow: 0 0 5px #16a085;
+  background-color: #2e2a36;
+  color: #ffffff;
+}
+body #login .container .form .forgot-password {
+  text-align: right;
+}
+body #login .container .form .register-btn {
+  width: 220px;
+  height: 40px;
+  background-color: #16a085;
+  align-items: center;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 4px;
+  font-weight: 400;
+}
+body #login .container .form .register-btn:hover {
+  background-color: #0c8f75;
+}
+body #login .container  .register-btn {
+        width: 220px;
+        height: 40px;
+        background-color: #16a085;
+        align-items: center;
+        color: #fff;
+        font-size: 14px;
+        border-radius: 4px;
+        font-weight: 400;
+    }
+    body #login .container  .register-btn:hover {
+        background-color: #0c8f75;
+    }
+
+@media only screen and (min-width:344px) and (max-width:932px) {
+    body #login .container {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:50px) and (max-width:909px) {
+    body #login .container {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px) {
+    body #login .container {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:1024px) and (max-width:1366px) {
+    body #login .container {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:912px) and (max-width:1368px) {
+    body #login .container {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:540px) and (max-width:720px) {
+    body #login .container {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:853px) and (max-width:1280px) {
+    body #login .container {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:600px) and (max-width:1024px) {
+    body #login .container {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:800px) and (max-width:1280px) {
+    body #login .container {
+        width: 100%;
+    }
+}
+/*# sourceMappingURL=login.css.map */
+

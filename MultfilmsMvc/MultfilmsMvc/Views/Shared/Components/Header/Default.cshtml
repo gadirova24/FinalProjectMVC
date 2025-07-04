@@ -1,0 +1,56 @@
+﻿<header>
+    <div class="container">
+        <nav>
+
+            <div class="headermenu">
+                <a class="menu-sidebar" href="#"><i role="button" class="fa-solid fa-bars"></i></a>
+            </div>
+            <div class="headerlogo">
+                <a asp-controller="Home" asp-action="Index">MULTFILMS</a>
+
+
+
+            </div>
+            <div class="header-search">
+                <form asp-controller="Cartoon" asp-action="Search" method="get">
+                    <input class="search" placeholder="Поиск по сайту..." type="text" name="query">
+                    <button type="submit" class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+
+            @if (User.Identity.IsAuthenticated)
+            {
+                <div class="header-profile">
+                    <a asp-controller="Favorite" asp-action="Index" class="profile-icon"><i class="fa-regular fa-bookmark"></i></a>
+                    <a href="#" class="profile-icon">
+                        <i class="fa-regular fa-user"></i>
+                    </a>
+
+                    <ul class="profile">
+                        <li><a href="#"><i class="fa-regular fa-moon"></i>Темная/светлая тема</a></li>
+                        <li>
+                            <a asp-controller="Favorite" asp-action="Index"><i class="fa-regular fa-heart"></i>Мои закладки </a>
+                        </li>
+                        <li>
+                            <form method="post" asp-controller="Account" asp-action="Logout">
+                                <button type="submit" style="border-style:none;background-color:transparent;color:#eee;font-size:15px"><i class="fa-solid fa-arrow-right-from-bracket" style="margin-right:7px"></i>Выйти</button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            }
+            else
+            {
+                <div class="header-account">
+                    <a class="register" asp-controller="Account" asp-action="Register">Регистрация</a>
+                    <a asp-controller="Account" asp-action="Login">
+                        <button class="login-btn btn">
+                            Войти
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </a>
+                </div>
+            }
+        </nav>
+    </div>
+</header>

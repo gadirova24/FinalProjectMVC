@@ -1,0 +1,63 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Repository\Repository.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.35" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.35" />
+    <PackageReference Include="MimeKit" Version="4.12.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="MailKit" Version="4.12.1" />
+    <PackageReference Include="Stripe.net" Version="48.3.0-beta.1" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Services\" />
+    <None Remove="Services\Interfaces\" />
+    <None Remove="ViewModels\" />
+    <None Remove="ViewModels\UI\" />
+    <None Remove="Helpers\" />
+    <None Remove="Helpers\Mappings\" />
+    <None Remove="Helpers\Enums\" />
+    <None Remove="Helpers\Exceptions\" />
+    <None Remove="ViewModels\Admin\" />
+    <None Remove="ViewModels\Admin\Country\" />
+    <None Remove="Helpers\Extensions\" />
+    <None Remove="ViewModels\Admin\Studio\" />
+    <None Remove="ViewModels\Admin\Collection\" />
+    <None Remove="ViewModels\Admin\Genre\" />
+    <None Remove="ViewModels\Admin\Category\" />
+    <None Remove="ViewModels\Admin\Cartoon\" />
+    <None Remove="ViewModels\Admin\Person\" />
+    <None Remove="ViewModels\Admin\Account\" />
+    <None Remove="ViewModels\Admin\CartoonSlider\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Services\" />
+    <Folder Include="Services\Interfaces\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="ViewModels\UI\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="Helpers\Mappings\" />
+    <Folder Include="Helpers\Enums\" />
+    <Folder Include="Helpers\Exceptions\" />
+    <Folder Include="ViewModels\Admin\" />
+    <Folder Include="ViewModels\Admin\Country\" />
+    <Folder Include="Helpers\Extensions\" />
+    <Folder Include="ViewModels\Admin\Studio\" />
+    <Folder Include="ViewModels\Admin\Collection\" />
+    <Folder Include="ViewModels\Admin\Genre\" />
+    <Folder Include="ViewModels\Admin\Category\" />
+    <Folder Include="ViewModels\Admin\Cartoon\" />
+    <Folder Include="ViewModels\Admin\Person\" />
+    <Folder Include="ViewModels\Admin\Account\" />
+    <Folder Include="ViewModels\Admin\CartoonSlider\" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,46 @@
+﻿@model IEnumerable<AdminPersonVM>
+<div class="container-fluid mt-5" style="width:60%">
+    <h1>Person's CRUD</h1>
+    <a asp-action="Create" class="btn btn-gradient-success btn-fw">Create</a>
+    <table class="table table-bordered mt-5">
+        <thead>
+            <tr>
+
+                <th> FullName </th>
+                <th>Roles</th>
+                <th>Options</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var person in Model)
+            {
+                <tr>
+
+                    <td> @person.FullName</td>
+                    <td>
+                        @if (person.Roles != null && person.Roles.Any())
+                        {
+                            @string.Join(", ", person.Roles)
+                        }
+                        else
+                        {
+                            <em>No roles assigned</em>
+                        }
+                    </td>
+                    <td style="display:flex">
+                        <a asp-action="Detail" asp-route-id="@person.Id" class="btn btn-gradient-info btn-fw">Detail</a>
+                        <a asp-action="Edit" asp-route-id="@person.Id" class="btn btn-gradient-primary btn-fw">Edit</a>
+                        @if (Model.Count() > 1)
+                        {
+                            <form asp-action="Delete" asp-route-id="@person.Id" method="post">
+                                <button type="submit" class="btn btn-gradient-danger btn-fw">Delete</button>
+                            </form>
+                        }
+                    </td>
+
+                </tr>
+            }
+
+        </tbody>
+    </table>
+</div>

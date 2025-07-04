@@ -1,0 +1,56 @@
+﻿@model IEnumerable<CartoonCookieVM>
+<section id="content">
+    <div class="container">
+        <div class="title">
+            <h2>Вы смотрели</h2>
+        </div>
+        @if (!Model.Any())
+        {
+            <p style="color:white">Вы ещё не смотрели ни одного мультфильма.</p>
+        }
+        else
+        {
+    <div class="multfilms">
+        <div class="text-end mb-3">
+            <a asp-controller="Cartoon" asp-action="ClearWatched" class="btn" style="color:#eee"><i class="fa-solid fa-trash"></i></a>
+        </div>
+
+        <div class="row">
+            @foreach (var cartoon in Model)
+            {
+                <div class="col-lg-2 col-6 col-md-3">
+
+                    <div class="cartoon-item">
+                        <div class="cartoon-image">
+                            <a asp-controller="Cartoon" asp-action="Detail" asp-route-id="@cartoon.Id">
+                                <img src="~/assets/images/cartoons/@cartoon.Image" alt="">
+
+                                <div class="overlay">
+                                    <i class="fa-solid fa-play"></i>
+                                    <div class="item-raiting">@cartoon.AverageRating.ToString("0.0") </div>
+
+                                </div>
+
+                            </a>
+                        </div>
+                        <div class="cartoon-description">
+                            <a class="item-title" href="#">
+                                <span>@cartoon.Name</span>
+                            </a>
+                            <div class="item-about">
+                                <div class="item-category">@cartoon.CategoryName</div>
+                                <div class="item-year">@cartoon.Year</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+
+
+        </div>
+
+
+    </div>
+        }
+    </div>
+</section>
