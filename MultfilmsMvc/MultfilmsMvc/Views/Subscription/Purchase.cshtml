@@ -1,0 +1,33 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Подписка";
+    var cartoonId = ViewData["CartoonId"];
+}
+<div class="purchase">
+    <div class="container mt-5 text-center purchase-cont">
+        <h2>Для просмотра мультфильма требуется подписка</h2>
+        <p>Оформите доступ за <strong>$20</strong>.</p>
+        <form asp-controller="Subscription" asp-action="Checkout" method="post">
+            <input type="hidden" name="cartoonId" value="@cartoonId" />
+            <button type="submit" class="btn btn-primary btn-lg btn-pay">Купить за $20</button>
+        </form>
+    </div>
+</div>
+
+<style>
+    .purchase-cont {
+        padding: 55px;
+        color :#eee;
+        background-color: #27232d;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin: auto;
+        margin-bottom :5%;
+    }
+    .btn-pay{
+        border:none;
+        background-color:#16a085;
+    }
+        .btn-pay:hover {
+            background-color: #16a085;
+        }
+</style>

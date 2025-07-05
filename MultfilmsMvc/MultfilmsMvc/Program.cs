@@ -7,7 +7,10 @@ using MultfilmsMvc.Middlewares;
 using Repository.Data;
 using Serilog;
 using Service;
+using Service.Helpers;
+using Service.Services.Interfaces;
 using Service.ViewModels.UI;
+using Stripe;
 
 var builder = WebApplication.CreateBuilder(args);
 Log.Logger = new LoggerConfiguration()
@@ -67,8 +70,16 @@ builder.Services.AddAutoMapper(assemblies);
 builder.Services.AddHttpContextAccessor();
 
 builder.Services.AddServiceLayer();
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromHours(1); // Подписка действует 1 час
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
+builder.Services.Configure<StripeSettings>(
+    builder.Configuration.GetSection("StripeSettings"));
 
-
+StripeConfiguration.ApiKey = builder.Configuration["StripeSettings:SecretKey"];
 Repository.DependencyInjection.AddRepositoryLayer(builder.Services);
 var app = builder.Build();
 
@@ -86,6 +97,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+app.UseSession();
 app.UseAuthentication();
 app.UseAuthorization();
 

@@ -21,15 +21,18 @@ namespace MultfilmsMvc.Controllers
     {
         private readonly IFavoriteService _favoriteService;
         private readonly ICartoonService _cartoonService;
+        private readonly ISubscriptionService _subService;
         private readonly UserManager<AppUser> _userManager;
 
         public FavoriteController(IFavoriteService favoriteService,
                                  UserManager<AppUser> userManager,
-                                 ICartoonService cartoonService)
+                                 ICartoonService cartoonService,
+                                 ISubscriptionService subService)
         {
             _favoriteService = favoriteService;
             _userManager = userManager;
             _cartoonService = cartoonService;
+            _subService = subService;
         }
 
       
@@ -56,6 +59,13 @@ namespace MultfilmsMvc.Controllers
         public async Task<IActionResult> Index()
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (userId == null)
+                return RedirectToAction("Purchase", "Subscription");
+
+            var hasSubscription = await _subService.HasActiveSubscriptionAsync(userId);
+            if (!hasSubscription)
+                return RedirectToAction("Purchase", "Subscription");
+
             var favorites = await _cartoonService.GetFavoritesByUserIdAsync(userId);
             return View(favorites);
         }

@@ -1079,7 +1079,7 @@
           }
         }
       },
-      "Stripe.net/48.3.0-beta.1": {
+      "Stripe.net/48.4.0-beta.1": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "13.0.3",
@@ -3134,10 +3134,10 @@
         "serilog.sinks.file.nuspec"
       ]
     },
-    "Stripe.net/48.3.0-beta.1": {
-      "sha512": "YCchWZCLfZylXWOB8nr7ImqgFeMbEiTjAhWey+YJvXondp6wetC8+PgQbE7HM3406x51WN0WJdqGueXtkW6B6A==",
+    "Stripe.net/48.4.0-beta.1": {
+      "sha512": "ETb6ExCkUMnV6psOHnQa6IR5vJSJsxa0nC5vrNih2A/rGkX2ICGaahW8Oy6q2LVp7OZ0VMRPclqrIJazHD92Tw==",
       "type": "package",
-      "path": "stripe.net/48.3.0-beta.1",
+      "path": "stripe.net/48.4.0-beta.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3158,7 +3158,7 @@
         "lib/netcoreapp3.1/Stripe.net.xml",
         "lib/netstandard2.0/Stripe.net.dll",
         "lib/netstandard2.0/Stripe.net.xml",
-        "stripe.net.48.3.0-beta.1.nupkg.sha512",
+        "stripe.net.48.4.0-beta.1.nupkg.sha512",
         "stripe.net.nuspec"
       ]
     },
@@ -4037,7 +4037,8 @@
       "MimeKit >= 4.12.0",
       "Serilog.AspNetCore >= 9.0.0",
       "Serilog.Sinks.File >= 7.0.0",
-      "Service >= 1.0.0"
+      "Service >= 1.0.0",
+      "Stripe.net >= 48.4.0-beta.1"
     ]
   },
   "packageFolders": {
@@ -4113,6 +4114,10 @@
           "Serilog.Sinks.File": {
             "target": "Package",
             "version": "[7.0.0, )"
+          },
+          "Stripe.net": {
+            "target": "Package",
+            "version": "[48.4.0-beta.1, )"
           }
         },
         "imports": [

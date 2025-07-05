@@ -5,9 +5,8 @@ namespace Service.Services.Interfaces
 {
 	public interface ISubscriptionService
 	{
-        Task<SubscriptionVM> CreateSubscriptionSessionAsync(string userId);
-        Task<bool> ConfirmSubscriptionAsync(string sessionId);
-        Task<bool> CheckSubscriptionStatusAsync(string userId);
+        Task ActivateSubscriptionAsync(string userId);
+        Task<bool> HasActiveSubscriptionAsync(string userId);
     }
 }
 

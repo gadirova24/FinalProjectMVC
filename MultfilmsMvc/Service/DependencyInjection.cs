@@ -22,6 +22,7 @@ namespace Service
             services.AddScoped<IFavoriteService, FavoriteService>();
             services.AddScoped<ICommentService, CommentService>();
             services.AddScoped<ICartoonSliderService, CartoonSliderService>();
+            services.AddScoped<ISubscriptionService, SubscriptionService>();
             return services;
 
         }

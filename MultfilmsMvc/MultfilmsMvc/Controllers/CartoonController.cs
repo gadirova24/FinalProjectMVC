@@ -22,38 +22,55 @@ namespace MultfilmsMvc.Controllers
         private readonly UserManager<AppUser> _userManager;
         private readonly ICommentService _commentService;
         private readonly IFavoriteService _favoriteService;
+        private readonly ISubscriptionService _subService;
         public CartoonController(ICartoonService cartoonService,
                                 IRatingService ratingService,
                                   UserManager<AppUser> userManager,
                                   IFavoriteService favoriteService,
-                                  ICommentService commentService)
+                                  ICommentService commentService,
+                                  ISubscriptionService subService)
         {
             _cartoonService = cartoonService;
             _ratingService = ratingService;
             _userManager = userManager;
             _favoriteService = favoriteService;
             _commentService = commentService;
+            _subService = subService;
         }
 
-      
+
 
         [HttpGet]
         public async Task<IActionResult> Detail(int id)
         {
+            if (id <= 0)
+            {
+                return NotFound();  
+            }
             var cartoon = await _cartoonService.GetDetailAsync(id);
             if (cartoon == null)
                 return NotFound();
 
-            if (User.Identity.IsAuthenticated)
+            if (!User.Identity.IsAuthenticated)
             {
-                var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-                if (!string.IsNullOrEmpty(userId))
-                {
-                    cartoon.IsFavorite = await _favoriteService.IsFavoriteAsync(id, userId);
-                }
+               
+                return RedirectToAction("Login", "Account", new { returnUrl = Url.Action("Detail", "Cartoon", new { id }) });
             }
-            cartoon.Comments = await _commentService.GetCommentsAsync(id); 
+
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            var hasSubscription = await _subService.HasActiveSubscriptionAsync(userId);
+            if (!hasSubscription)
+            {
+
+                return RedirectToAction("Purchase", "Subscription", new { cartoonId = id });
+            }
+
+
+            cartoon.IsFavorite = await _favoriteService.IsFavoriteAsync(id, userId);
+            cartoon.Comments = await _commentService.GetCommentsAsync(id);
             cartoon.NewComment = new CommentCreateVM { CartoonId = id };
+
             var watchedJson = Request.Cookies["WatchedCartoons"];
             var watchedList = string.IsNullOrEmpty(watchedJson)
                 ? new List<CartoonCookieVM>()

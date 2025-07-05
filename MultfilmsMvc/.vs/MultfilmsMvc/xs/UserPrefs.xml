@@ -6,20 +6,41 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="MultfilmsMvc/Views/Cartoon/Detail.cshtml">
     <Files>
       <File FileName="MultfilmsMvc/Views/Cartoon/Detail.cshtml" Line="159" Column="1" />
+      <File FileName="MultfilmsMvc/Program.cs" Line="100" Column="18" />
+      <File FileName="Service/Services/Interfaces/ISubscriptionService.cs" Line="9" Column="62" />
+      <File FileName="Service/Services/SubscriptionService.cs" Line="50" Column="1" />
+      <File FileName="MultfilmsMvc/Controllers/SubsriptionController.cs" Line="24" Column="10" />
+      <File FileName="MultfilmsMvc/appsettings.json" Line="9" Column="1" />
+      <File FileName="Service/Helpers/StripeSettings.cs" Line="7" Column="51" />
+      <File FileName="MultfilmsMvc/Controllers/CartoonController.cs" Line="107" Column="10" />
+      <File FileName="Service/DependencyInjection.cs" Line="25" Column="73" />
+      <File FileName="MultfilmsMvc/Controllers/FavoriteController.cs" Line="35" Column="38" />
+      <File FileName="MultfilmsMvc/Views/Subscription/Purchase.cshtml" Line="24" Column="27" />
+      <File FileName="MultfilmsMvc/Controllers/AccountController.cs" Line="45" Column="59" />
+      <File FileName="MultfilmsMvc/Views/Account/Login.cshtml" Line="25" Column="76" />
+      <File FileName="MultfilmsMvc/Views/Account/Profile.cshtml" Line="26" Column="7" />
+      <File FileName="MultfilmsMvc/Views/Account/EmailConfirmed.cshtml" Line="11" Column="1" />
+      <File FileName="MultfilmsMvc/Views/Account/RegisterConfirmation.cshtml" Line="5" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="MultfilmsMvc" expanded="True">
             <Node name="MultfilmsMvc">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="Controllers" expanded="True" />
               <Node name="Views">
                 <Node name="Cartoon" expanded="True">
                   <Node name="Detail.cshtml" selected="True" />
                 </Node>
                 <Node name="Collection" expanded="True" />
                 <Node name="Country" expanded="True" />
+                <Node name="Favorite" expanded="True" />
                 <Node name="Genre" expanded="True" />
                 <Node name="Studio" expanded="True" />
+                <Node name="Subscription" expanded="True" />
               </Node>
               <Node name="wwwroot" expanded="True">
                 <Node name="assets" expanded="True">
@@ -27,18 +48,19 @@
                 </Node>
               </Node>
             </Node>
+            <Node name="Repository" expanded="True" />
             <Node name="Service">
-              <Node name="Helpers" expanded="True">
-                <Node name="Mappings" expanded="True" />
-              </Node>
-              <Node name="ViewModels">
-                <Node name="Admin">
-                  <Node name="Comment" expanded="True" />
-                  <Node name="Country" expanded="True" />
-                </Node>
+              <Node name="Helpers" expanded="True" />
+              <Node name="Services">
+                <Node name="Interfaces" expanded="True" />
               </Node>
             </Node>
           </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State name="__root__">
+          <Node name="MultfilmsMvc" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>

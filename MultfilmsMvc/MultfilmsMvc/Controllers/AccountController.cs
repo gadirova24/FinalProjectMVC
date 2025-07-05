@@ -28,24 +28,31 @@ namespace MultfilmsMvc.Controllers
             _userManager = userManager;
         }
         [HttpGet]
-        public async Task<IActionResult> Login()
+        public IActionResult Login(string? returnUrl = null)
         {
+            ViewData["ReturnUrl"] = returnUrl;
             return View();
         }
+    
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Login(LoginVM request)
+        public async Task<IActionResult> Login(LoginVM request, string? returnUrl = null)
         {
-            if (!ModelState.IsValid)return View(request);
+            if (!ModelState.IsValid) return View(request);
 
             try
             {
                 await _accountService.LoginAsync(request);
+                if (!string.IsNullOrEmpty(returnUrl) && Url.IsLocalUrl(returnUrl))
+                {
+                    return Redirect(returnUrl);
+                }
+
                 return RedirectToAction("Index", "Home");
             }
             catch (ValidationException ex)
             {
-                ModelState.AddModelError(string.Empty, ex.Message); 
+                ModelState.AddModelError(string.Empty, ex.Message);
                 return View(request);
             }
             catch (NotFoundException ex)
@@ -53,8 +60,6 @@ namespace MultfilmsMvc.Controllers
                 ModelState.AddModelError(string.Empty, ex.Message);
                 return View(request);
             }
-        
-
         }
 
         [HttpPost]
@@ -62,6 +67,7 @@ namespace MultfilmsMvc.Controllers
         public async Task<IActionResult> Logout()
         {
             await _accountService.LogoutAsync();
+            Response.Cookies.Delete("WatchedCartoons");
             return RedirectToAction("Index", "Home");
         }
 

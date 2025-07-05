@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Od6iXkEBwNIqAYZg9j0FIThEN7O5t5KGnBOzXxqYxuSr2sf1lcbtWdUZjcKQdw+vQkg1v9WQb5Wq9xdr1Zfv6A==",
+  "dgSpecHash": "Zus3myMS/o3hZeq0Ml3Pq+Yt7xW1hg4vmtk93QkX7c0D58Q9GAXhxnoCT4elBPB5e0frnXn/sy4vsq7eg2l6tg==",
   "success": true,
   "projectFilePath": "/Users/nigar/Desktop/MultfilmsMvcFinalProject/MultfilmsMvc/MultfilmsMvc/MultfilmsMvc.csproj",
   "expectedPackageFiles": [
@@ -65,7 +65,7 @@
     "/Users/nigar/.nuget/packages/serilog.sinks.console/6.0.0/serilog.sinks.console.6.0.0.nupkg.sha512",
     "/Users/nigar/.nuget/packages/serilog.sinks.debug/3.0.0/serilog.sinks.debug.3.0.0.nupkg.sha512",
     "/Users/nigar/.nuget/packages/serilog.sinks.file/7.0.0/serilog.sinks.file.7.0.0.nupkg.sha512",
-    "/Users/nigar/.nuget/packages/stripe.net/48.3.0-beta.1/stripe.net.48.3.0-beta.1.nupkg.sha512",
+    "/Users/nigar/.nuget/packages/stripe.net/48.4.0-beta.1/stripe.net.48.4.0-beta.1.nupkg.sha512",
     "/Users/nigar/.nuget/packages/system.buffers/4.5.1/system.buffers.4.5.1.nupkg.sha512",
     "/Users/nigar/.nuget/packages/system.collections.immutable/6.0.0/system.collections.immutable.6.0.0.nupkg.sha512",
     "/Users/nigar/.nuget/packages/system.componentmodel.annotations/5.0.0/system.componentmodel.annotations.5.0.0.nupkg.sha512",

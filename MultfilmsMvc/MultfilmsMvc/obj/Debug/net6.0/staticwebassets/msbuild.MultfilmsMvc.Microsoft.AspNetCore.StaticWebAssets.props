@@ -7216,6 +7216,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\css\style.scss))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\007676e4-99db-4512-a2c6-23940f9a5ad0-10jizney.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>MultfilmsMvc</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/MultfilmsMvc</BasePath>
+      <RelativePath>assets/images/cartoons/007676e4-99db-4512-a2c6-23940f9a5ad0-10jizney.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\007676e4-99db-4512-a2c6-23940f9a5ad0-10jizney.webp))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\01179dc4-3f5c-4bf9-9249-51f2791d8e4e bambi.webp))">
       <SourceType>Package</SourceType>
       <SourceId>MultfilmsMvc</SourceId>
@@ -7248,6 +7264,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\01832e7f-7447-40b0-a5c8-97c02828d440 rusalochka1.webp))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\03326685-6078-403f-8c83-4bc60e80b75a-frozen1.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>MultfilmsMvc</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/MultfilmsMvc</BasePath>
+      <RelativePath>assets/images/cartoons/03326685-6078-403f-8c83-4bc60e80b75a-frozen1.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\03326685-6078-403f-8c83-4bc60e80b75a-frozen1.webp))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\06fe80d8-7095-4b8c-a8f9-36ae1745b0ea lednikoviyskrat.webp))">
       <SourceType>Package</SourceType>
       <SourceId>MultfilmsMvc</SourceId>
@@ -7279,6 +7311,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\10jizneyslider.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\14ba9401-9c18-4f1a-ae5f-54bb5cbe21ce-ratatuy.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>MultfilmsMvc</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/MultfilmsMvc</BasePath>
+      <RelativePath>assets/images/cartoons/14ba9401-9c18-4f1a-ae5f-54bb5cbe21ce-ratatuy.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\14ba9401-9c18-4f1a-ae5f-54bb5cbe21ce-ratatuy.webp))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\16340b6a-5aec-4a3f-a025-9addeacf9d25 frozen1.webp))">
       <SourceType>Package</SourceType>
@@ -7376,6 +7424,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\32195a86-6629-4317-b197-755a4ded3f21 angel.webp))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\38f1f651-9345-4fe7-8d0e-5337a92142df-angel.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>MultfilmsMvc</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/MultfilmsMvc</BasePath>
+      <RelativePath>assets/images/cartoons/38f1f651-9345-4fe7-8d0e-5337a92142df-angel.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\38f1f651-9345-4fe7-8d0e-5337a92142df-angel.webp))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\3a12572b-4acd-45d6-9344-ef873cdceb8a cheburashka.webp))">
       <SourceType>Package</SourceType>
       <SourceId>MultfilmsMvc</SourceId>
@@ -7456,6 +7520,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\53a38fc6-4d9a-4987-afbb-d5071141ba63 dinozavr.webp))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\5694465c-aae5-4583-9b70-3df49081bb14-lednikoviy4.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>MultfilmsMvc</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/MultfilmsMvc</BasePath>
+      <RelativePath>assets/images/cartoons/5694465c-aae5-4583-9b70-3df49081bb14-lednikoviy4.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\5694465c-aae5-4583-9b70-3df49081bb14-lednikoviy4.webp))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\5b169745-62d7-437f-8bce-2585fc146de8 enkanto.webp))">
       <SourceType>Package</SourceType>
       <SourceId>MultfilmsMvc</SourceId>
@@ -7488,6 +7568,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\5ef758e2-6ef4-43d5-ab80-b18d60dd56db.webp))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\6383d9e8-8ed8-4eb1-bd74-1bc891bec1d1-lednikoviy2.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>MultfilmsMvc</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/MultfilmsMvc</BasePath>
+      <RelativePath>assets/images/cartoons/6383d9e8-8ed8-4eb1-bd74-1bc891bec1d1-lednikoviy2.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\6383d9e8-8ed8-4eb1-bd74-1bc891bec1d1-lednikoviy2.webp))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\65cee315-ff1d-4670-a628-3626b2f21630 zverinyreysmult.webp))">
       <SourceType>Package</SourceType>
       <SourceId>MultfilmsMvc</SourceId>
@@ -7503,6 +7599,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\65cee315-ff1d-4670-a628-3626b2f21630 zverinyreysmult.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\6be8fb60-e9e6-403f-801d-c4e0b8063c06-pingvini.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>MultfilmsMvc</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/MultfilmsMvc</BasePath>
+      <RelativePath>assets/images/cartoons/6be8fb60-e9e6-403f-801d-c4e0b8063c06-pingvini.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\6be8fb60-e9e6-403f-801d-c4e0b8063c06-pingvini.webp))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\6d4530b0-7152-439f-8f6a-956238b6bdc0 tacki1.webp))">
       <SourceType>Package</SourceType>
@@ -7535,6 +7647,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\6f43ea0e-bbef-41c4-85a7-c770030d5db4.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\6f953852-23e3-4df0-8abc-347e1d03d3a3-zverinyreysmult.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>MultfilmsMvc</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/MultfilmsMvc</BasePath>
+      <RelativePath>assets/images/cartoons/6f953852-23e3-4df0-8abc-347e1d03d3a3-zverinyreysmult.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\6f953852-23e3-4df0-8abc-347e1d03d3a3-zverinyreysmult.webp))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\7615cd74-37fd-46ea-9e74-d735ed374db3 ratatuy.webp))">
       <SourceType>Package</SourceType>
@@ -7712,6 +7840,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\9309e447-cce5-4763-bf28-412d68a0a153 ernest.webp))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\95146521-3977-4f35-ada9-15d5c3e1ed5d-dinozavr.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>MultfilmsMvc</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/MultfilmsMvc</BasePath>
+      <RelativePath>assets/images/cartoons/95146521-3977-4f35-ada9-15d5c3e1ed5d-dinozavr.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\95146521-3977-4f35-ada9-15d5c3e1ed5d-dinozavr.webp))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\992104f6-f422-4dea-840c-ec9e4b3bd419 pingvini.webp))">
       <SourceType>Package</SourceType>
       <SourceId>MultfilmsMvc</SourceId>
@@ -7743,6 +7887,38 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\99a2259c-8f88-4597-881e-be1977937296.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\99bd3c7b-898a-4120-a19f-1fe01e8b0fcf-bambi.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>MultfilmsMvc</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/MultfilmsMvc</BasePath>
+      <RelativePath>assets/images/cartoons/99bd3c7b-898a-4120-a19f-1fe01e8b0fcf-bambi.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\99bd3c7b-898a-4120-a19f-1fe01e8b0fcf-bambi.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\a6f48a9d-1b13-4fff-8795-eae64841ec75-addams.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>MultfilmsMvc</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/MultfilmsMvc</BasePath>
+      <RelativePath>assets/images/cartoons/a6f48a9d-1b13-4fff-8795-eae64841ec75-addams.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\a6f48a9d-1b13-4fff-8795-eae64841ec75-addams.webp))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\aa63237b-3532-47ce-9cce-1300e8e3db54 monstri.webp))">
       <SourceType>Package</SourceType>
@@ -7776,6 +7952,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\aab9d541-a759-4d88-8eb0-bd5209d6d65f zveropolis.webp))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\ac03ae6e-8283-4222-a688-6b25f907ff12-barbi.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>MultfilmsMvc</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/MultfilmsMvc</BasePath>
+      <RelativePath>assets/images/cartoons/ac03ae6e-8283-4222-a688-6b25f907ff12-barbi.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\ac03ae6e-8283-4222-a688-6b25f907ff12-barbi.webp))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\addams.webp))">
       <SourceType>Package</SourceType>
       <SourceId>MultfilmsMvc</SourceId>
@@ -7791,6 +7983,38 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\addams.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\af659396-525e-4254-a213-c5450f2d84b3-ernest.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>MultfilmsMvc</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/MultfilmsMvc</BasePath>
+      <RelativePath>assets/images/cartoons/af659396-525e-4254-a213-c5450f2d84b3-ernest.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\af659396-525e-4254-a213-c5450f2d84b3-ernest.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\b57154b6-33d3-4a9c-8004-9ecaa3915a60-garfild.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>MultfilmsMvc</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/MultfilmsMvc</BasePath>
+      <RelativePath>assets/images/cartoons/b57154b6-33d3-4a9c-8004-9ecaa3915a60-garfild.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\b57154b6-33d3-4a9c-8004-9ecaa3915a60-garfild.webp))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\bceaf5a1-270c-4fdc-b074-a01252371eee.webp))">
       <SourceType>Package</SourceType>
@@ -7808,6 +8032,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\bceaf5a1-270c-4fdc-b074-a01252371eee.webp))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\c3becac8-cf2e-4ed6-b506-ef6edb085636-moana.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>MultfilmsMvc</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/MultfilmsMvc</BasePath>
+      <RelativePath>assets/images/cartoons/c3becac8-cf2e-4ed6-b506-ef6edb085636-moana.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\c3becac8-cf2e-4ed6-b506-ef6edb085636-moana.webp))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\c654ea95-c8b6-4297-98f2-94a045505784 enkanto.webp))">
       <SourceType>Package</SourceType>
       <SourceId>MultfilmsMvc</SourceId>
@@ -7824,6 +8064,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\c654ea95-c8b6-4297-98f2-94a045505784 enkanto.webp))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\cb3c5aa4-1e0d-485d-b269-766109115092-megamind.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>MultfilmsMvc</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/MultfilmsMvc</BasePath>
+      <RelativePath>assets/images/cartoons/cb3c5aa4-1e0d-485d-b269-766109115092-megamind.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\cb3c5aa4-1e0d-485d-b269-766109115092-megamind.webp))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\d1553c7f-f71f-4108-8caf-479ef81dd65b.webp))">
       <SourceType>Package</SourceType>
       <SourceId>MultfilmsMvc</SourceId>
@@ -7839,6 +8095,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\d1553c7f-f71f-4108-8caf-479ef81dd65b.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\d2f10107-04c3-43f1-b127-3008b7c637f9-monstri.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>MultfilmsMvc</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/MultfilmsMvc</BasePath>
+      <RelativePath>assets/images/cartoons/d2f10107-04c3-43f1-b127-3008b7c637f9-monstri.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\d2f10107-04c3-43f1-b127-3008b7c637f9-monstri.webp))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\d3ef22a0-5669-481f-a95b-2c39b0126b9a rusalochka2.webp))">
       <SourceType>Package</SourceType>
@@ -7888,6 +8160,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\d500b543-8b96-4997-b06e-8584ee9c4ee7-pro-lednikovyj-period.jpeg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\db396d70-8848-401d-9038-4bc26d1035aa-grinch.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>MultfilmsMvc</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/MultfilmsMvc</BasePath>
+      <RelativePath>assets/images/cartoons/db396d70-8848-401d-9038-4bc26d1035aa-grinch.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\db396d70-8848-401d-9038-4bc26d1035aa-grinch.webp))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\db97e882-e786-4606-aff8-ac0ade6dc583 sadko.webp))">
       <SourceType>Package</SourceType>
       <SourceId>MultfilmsMvc</SourceId>
@@ -7904,6 +8192,54 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\db97e882-e786-4606-aff8-ac0ade6dc583 sadko.webp))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\df8b7edb-8e58-4dbf-b3a0-47358dc6074d-zveropolis.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>MultfilmsMvc</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/MultfilmsMvc</BasePath>
+      <RelativePath>assets/images/cartoons/df8b7edb-8e58-4dbf-b3a0-47358dc6074d-zveropolis.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\df8b7edb-8e58-4dbf-b3a0-47358dc6074d-zveropolis.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\df962068-ccde-4228-8f2f-604925f08081-lednikoviyskrat.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>MultfilmsMvc</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/MultfilmsMvc</BasePath>
+      <RelativePath>assets/images/cartoons/df962068-ccde-4228-8f2f-604925f08081-lednikoviyskrat.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\df962068-ccde-4228-8f2f-604925f08081-lednikoviyskrat.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\e39094b0-079b-44c0-9f37-b11d37cbb495-lednikoviystolknovenie.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>MultfilmsMvc</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/MultfilmsMvc</BasePath>
+      <RelativePath>assets/images/cartoons/e39094b0-079b-44c0-9f37-b11d37cbb495-lednikoviystolknovenie.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\e39094b0-079b-44c0-9f37-b11d37cbb495-lednikoviystolknovenie.webp))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\ea4eb5df-d514-48e4-a140-a4082eb4393f megamind.webp))">
       <SourceType>Package</SourceType>
       <SourceId>MultfilmsMvc</SourceId>
@@ -7919,6 +8255,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\ea4eb5df-d514-48e4-a140-a4082eb4393f megamind.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\f1645ccd-a87a-4beb-a500-751fac4f073d-cheburashka.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>MultfilmsMvc</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/MultfilmsMvc</BasePath>
+      <RelativePath>assets/images/cartoons/f1645ccd-a87a-4beb-a500-751fac4f073d-cheburashka.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\f1645ccd-a87a-4beb-a500-751fac4f073d-cheburashka.webp))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cartoons\f48668ed-d0ec-419c-9778-02288302f1d2.webp))">
       <SourceType>Package</SourceType>
@@ -8208,6 +8560,38 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\collections\278d3b03-0914-44c4-99a2-e904b45205c3 pro-zhivotnyh.jpeg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\collections\31578f89-ef7e-4dde-9283-6d21180117c2-pro-zhivotnyh.jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>MultfilmsMvc</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/MultfilmsMvc</BasePath>
+      <RelativePath>assets/images/collections/31578f89-ef7e-4dde-9283-6d21180117c2-pro-zhivotnyh.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\collections\31578f89-ef7e-4dde-9283-6d21180117c2-pro-zhivotnyh.jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\collections\95671f85-4625-464c-a799-22afc06d8715-pro-angelov .jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>MultfilmsMvc</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/MultfilmsMvc</BasePath>
+      <RelativePath>assets/images/collections/95671f85-4625-464c-a799-22afc06d8715-pro-angelov .jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\collections\95671f85-4625-464c-a799-22afc06d8715-pro-angelov .jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\collections\f0a25e89-7b7c-44a8-92ee-4958cb9e7165 pro-angelov .jpeg))">
       <SourceType>Package</SourceType>
       <SourceId>MultfilmsMvc</SourceId>
@@ -8480,6 +8864,54 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\countries\1efead70-94e1-470c-9f94-604e35b447cb Finlyandiya.png))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\countries\1fe17a61-fcee-4950-8edd-a392006caeca-Velikobritaniya.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>MultfilmsMvc</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/MultfilmsMvc</BasePath>
+      <RelativePath>assets/images/countries/1fe17a61-fcee-4950-8edd-a392006caeca-Velikobritaniya.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\countries\1fe17a61-fcee-4950-8edd-a392006caeca-Velikobritaniya.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\countries\369de31c-3d61-40e3-89f5-3328f8612ba5-Kitaj.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>MultfilmsMvc</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/MultfilmsMvc</BasePath>
+      <RelativePath>assets/images/countries/369de31c-3d61-40e3-89f5-3328f8612ba5-Kitaj.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\countries\369de31c-3d61-40e3-89f5-3328f8612ba5-Kitaj.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\countries\392a5326-3d78-4dc4-95b3-e4ca5daead97-Kanada.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>MultfilmsMvc</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/MultfilmsMvc</BasePath>
+      <RelativePath>assets/images/countries/392a5326-3d78-4dc4-95b3-e4ca5daead97-Kanada.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\countries\392a5326-3d78-4dc4-95b3-e4ca5daead97-Kanada.png))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\countries\869508d7-b07f-48d9-b9e3-40d0bfa1cdb2 Koreya.png))">
       <SourceType>Package</SourceType>
       <SourceId>MultfilmsMvc</SourceId>
@@ -8512,6 +8944,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\countries\8a9c4c4d-bbb0-49a3-8faa-c130573875fa-Indiya.png))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\countries\9dfbc7a7-e810-4e44-95f2-ad3375e242e8-Indiya.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>MultfilmsMvc</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/MultfilmsMvc</BasePath>
+      <RelativePath>assets/images/countries/9dfbc7a7-e810-4e44-95f2-ad3375e242e8-Indiya.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\countries\9dfbc7a7-e810-4e44-95f2-ad3375e242e8-Indiya.png))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\countries\9f83fca7-312c-4f44-86c7-99a164882727 Velikobritaniya.png))">
       <SourceType>Package</SourceType>
       <SourceId>MultfilmsMvc</SourceId>
@@ -8543,6 +8991,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\countries\a8f757c1-c396-437c-ba16-70ebe3d5694f Finlyandiya.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\countries\bd053789-3774-4880-9628-31771af493d8-Finlyandiya.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>MultfilmsMvc</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/MultfilmsMvc</BasePath>
+      <RelativePath>assets/images/countries/bd053789-3774-4880-9628-31771af493d8-Finlyandiya.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\countries\bd053789-3774-4880-9628-31771af493d8-Finlyandiya.png))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\countries\Daniya.png))">
       <SourceType>Package</SourceType>
@@ -8591,6 +9055,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\countries\ddc30686-58b3-4dbc-8ad4-9fc5958e8de2 Kitaj.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\countries\f0507901-cbae-4e6d-afbf-d6bc7f0a5ec5-Koreya.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>MultfilmsMvc</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/MultfilmsMvc</BasePath>
+      <RelativePath>assets/images/countries/f0507901-cbae-4e6d-afbf-d6bc7f0a5ec5-Koreya.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\countries\f0507901-cbae-4e6d-afbf-d6bc7f0a5ec5-Koreya.png))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\countries\Finlyandiya.png))">
       <SourceType>Package</SourceType>
@@ -8848,6 +9328,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\studios\002d2fcb-0ca0-4665-8ea8-ada26a8bfa49 disney.webp))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\studios\02019f69-4b70-430f-bb67-1ef3bcab130c-blueska.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>MultfilmsMvc</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/MultfilmsMvc</BasePath>
+      <RelativePath>assets/images/studios/02019f69-4b70-430f-bb67-1ef3bcab130c-blueska.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\studios\02019f69-4b70-430f-bb67-1ef3bcab130c-blueska.webp))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\studios\0d68303d-6edb-4af3-92c3-931017dbd68e blueska.webp))">
       <SourceType>Package</SourceType>
       <SourceId>MultfilmsMvc</SourceId>
@@ -8863,6 +9359,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\studios\0d68303d-6edb-4af3-92c3-931017dbd68e blueska.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\studios\1f39dee9-c2a8-42d8-b7d4-474f3b4454b6-disney.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>MultfilmsMvc</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/MultfilmsMvc</BasePath>
+      <RelativePath>assets/images/studios/1f39dee9-c2a8-42d8-b7d4-474f3b4454b6-disney.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\studios\1f39dee9-c2a8-42d8-b7d4-474f3b4454b6-disney.webp))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\studios\72bae79c-aaf7-4e1e-b93c-a3155b747a99 blueska.webp))">
       <SourceType>Package</SourceType>
